@@ -1,9 +1,13 @@
 # Projet_Python_2A
 
-## Synthèse
+## Pitch
+### Problématique
+### Contexte 
+### Données
 
-## Contexte
-
-## Code
-
-## Résultats
+## Description
+Projet réalisé en plusieurs parties. Nous avons à cœur de garder un approche claire et transparente:
+- Récupération
+- Données problématiques (valeurs manquantes, outliers, réalisation des join)
+- Modélisation
+- Conclusion
