@@ -9,16 +9,33 @@ class Google_Trends:
     def get_trends(self, mots, timeframe="today 5-y", geo="FR"):
         print("Récupération de trends pour: ", mots)
         tr = Trends()
+
+        locations = tr.geo(find='courbevoie', language='fr')
+        print("Lieu:", locations)
+
+
         df = tr.interest_over_time(mots, timeframe=timeframe, geo=geo)
         if not df.empty:
             df = df.drop(columns=["isPartial"])
-        print(df.head())
         return df
+    
+    def get_trends_geo(self, mot, timeframe="today 5-y", geo="FR"):
+        # City-level data for California
+        tr = Trends()
+        city_df = tr.interest_by_region(
+            mot,
+            geo=geo,
+            resolution='CITY', 
+            timeframe=timeframe
+        )
+        
+        return city_df
 
     def normalisation(self, df):
         for col in df.columns:
             df[col] = (df[col] - df[col].min()) / (df[col].max() - df[col].min()) * 100
         return df
+    
     def plot(self, df):
         if "Date" in df.columns:
             df.set_index("Date", inplace=True)
@@ -35,7 +52,6 @@ class Google_Trends:
         plt.show()
 
 GT = Google_Trends()
-df = GT.get_trends(["Emeute", "mortier", 'manifestation'])
+df = GT.get_trends(["Emeute", "mortier", 'manifestation'], geo = "FR")
 df = GT.normalisation(df)
 GT.plot(df)
-
