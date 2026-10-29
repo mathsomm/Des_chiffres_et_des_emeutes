@@ -1,0 +1,4333 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "conflict_1fef6ae6bbe907ce",
+      "url": "https://gdeltcloud.com/events/paris-rioters-loot-a-supermarket-amid-renewed-unrest--conflict_1fef6ae6bbe907ce",
+      "primary_story_url": "https://gdeltcloud.com/stories/jd-vance-blames-immigration-for-violence-in-france-44794261",
+      "family": "conflict",
+      "title": "Paris rioters loot a supermarket amid renewed unrest",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-18, a group of young people reportedly entered and looted a damaged supermarket in Paris, while onlookers cheered. The article also reports a gathering at Place de la République amid calls to continue the movement.",
+      "event_date": "2026-10-18",
+      "observed_at": "2026-10-18T16:30:00.000Z",
+      "event_date_basis": "publication_day_inference",
+      "event_date_evidence": "The article says tensions continued “today” and describes a group entering and looting a supermarket in Paris; the source was published in the 2026-10-17/2026-10-18 window.",
+      "coded_at": "2026-10-18T17:11:22Z",
+      "updated_at": "2026-10-18T18:11:40Z",
+      "processed_at": "2026-10-18T17:11:22Z",
+      "category": "Riots",
+      "subcategory": "Mob violence",
+      "subcategory_label": "Mob violence",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Île-de-France",
+        "location": "Paris",
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Paris rioters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.3235,
+        "severity_tier": "low",
+        "goldstein_scale": -9.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.72,
+        "article_count": 132,
+        "evidence_source_count": 2,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 2,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "44794261191d",
+          "url": "https://gdeltcloud.com/stories/jd-vance-blames-immigration-for-violence-in-france-44794261",
+          "title": "JD Vance blames immigration for violence in France",
+          "story_date": "2026-10-18",
+          "article_count": 132
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "e_abf6b4a7b6646863",
+          "id_space": "spine",
+          "name": "Emmanuel Macron",
+          "type": "person",
+          "entity_id": "e_abf6b4a7b6646863",
+          "spine_id": "e_abf6b4a7b6646863",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Emmanuel_Macron",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_abf6b4a7b6646863"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": true,
+            "total": 4,
+            "status": "current",
+            "offices": [
+              {
+                "office_id": "p_6f74cc17e2639fcd",
+                "name": "Head of state of France",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": "2017-05-14",
+                "end_date": null,
+                "evidence_date": "2026-10-19",
+                "sources": [
+                  {
+                    "source_key": "os_wd_leaders",
+                    "url": "https://www.wikidata.org/wiki/Property:P35"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_9f6638e329b56fbb",
+                "name": "Head of state of Andorra",
+                "country_iso3": "AND",
+                "status": "current",
+                "start_date": "2017-05-01",
+                "end_date": null,
+                "evidence_date": "2026-10-19",
+                "sources": [
+                  {
+                    "source_key": "os_wd_leaders",
+                    "url": "https://www.wikidata.org/wiki/Property:P35"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_e8fa78933393ee57",
+                "name": "Head of State (Co-Prince)",
+                "country_iso3": "AND",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_974bd6f55332ac51",
+                "name": "President",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              }
+            ],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:d9980449c344901276b6",
+          "id_space": "llm",
+          "name": "Laurent Nuñez",
+          "type": "person",
+          "entity_id": "llm:d9980449c344901276b6",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:d9980449c344901276b6"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:ccae2c6c38d4dd3a8d9e",
+          "id_space": "llm",
+          "name": "French Ministry of the Interior",
+          "type": "organization",
+          "entity_id": "llm:ccae2c6c38d4dd3a8d9e",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:ccae2c6c38d4dd3a8d9e"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:492560dd310d5ac9f2e0",
+          "id_space": "llm",
+          "name": "Ministry of the Interior of France",
+          "type": "organization",
+          "entity_id": "llm:492560dd310d5ac9f2e0",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:492560dd310d5ac9f2e0"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "e_d4beba0538bb692c",
+          "id_space": "spine",
+          "name": "Laurent Nuñez",
+          "type": "person",
+          "entity_id": "e_d4beba0538bb692c",
+          "spine_id": "e_d4beba0538bb692c",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Laurent_Nuñez",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_d4beba0538bb692c"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": true,
+            "total": 1,
+            "status": "current",
+            "offices": [
+              {
+                "office_id": "p_4f95df9079a35cc6",
+                "name": "Minister of the Interior",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              }
+            ],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://www.inewsgr.com/184/vythismeni-sto-chaos-i-gallia--nea-epeisodia-sto-parisi-kai-toulachiston-2000-syllipseis-en-anamoni-tou-diangelmatos-makron.htm",
+          "title": "Βυθισμένη στο χάος η Γαλλία -Νέα επεισόδια στο Παρίσι και τουλάχιστον 2.000 συλλήψεις, εν αναμονή του διαγγέλματος Μακρόν",
+          "domain": "inewsgr.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=inewsgr.com&sz=64",
+          "rank": 1
+        },
+        {
+          "url": "https://www.newsbeast.gr/world/arthro/13433179/nea-entasi-sto-parisi-epeisodia-kai-dakrygona-meta-tis-mazikes-diadiloseis-stis-2000-to-diangelma-makron",
+          "title": "Νέα ένταση στο Παρίσι: Επεισόδια και δακρυγόνα μετά τις μαζικές διαδηλώσεις – Στις 20:00 το διάγγελμα Μακρόν",
+          "domain": "newsbeast.gr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=newsbeast.gr&sz=64",
+          "rank": 2
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "el",
+          "count": 37
+        },
+        {
+          "language": "fr",
+          "count": 22
+        },
+        {
+          "language": "es",
+          "count": 13
+        },
+        {
+          "language": "bs",
+          "count": 8
+        },
+        {
+          "language": "sr",
+          "count": 6
+        },
+        {
+          "language": "ar",
+          "count": 5
+        },
+        {
+          "language": "sk",
+          "count": 5
+        },
+        {
+          "language": "cs",
+          "count": 4
+        },
+        {
+          "language": "de",
+          "count": 4
+        },
+        {
+          "language": "en",
+          "count": 3
+        },
+        {
+          "language": "ru",
+          "count": 3
+        },
+        {
+          "language": "tr",
+          "count": 3
+        },
+        {
+          "language": "zh",
+          "count": 3
+        },
+        {
+          "language": "fi",
+          "count": 2
+        },
+        {
+          "language": "lt",
+          "count": 2
+        },
+        {
+          "language": "ro",
+          "count": 2
+        },
+        {
+          "language": "da",
+          "count": 1
+        },
+        {
+          "language": "hr",
+          "count": 1
+        },
+        {
+          "language": "is",
+          "count": 1
+        },
+        {
+          "language": "it",
+          "count": 1
+        },
+        {
+          "language": "mk",
+          "count": 1
+        },
+        {
+          "language": "no",
+          "count": 1
+        },
+        {
+          "language": "pt",
+          "count": 1
+        },
+        {
+          "language": "sl",
+          "count": 1
+        },
+        {
+          "language": "sq",
+          "count": 1
+        },
+        {
+          "language": "sv",
+          "count": 1
+        }
+      ],
+      "top_language": "el",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_1fef6ae6bbe907ce",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_7c2ad663cdb886d3",
+      "url": "https://gdeltcloud.com/events/unidentified-looters-ransack-olympique-de-marseilles-officia--conflict_7c2ad663cdb886d3",
+      "primary_story_url": "https://gdeltcloud.com/stories/protests-turn-marseille-streets-into-a-battleground-in-franc-17cfa18e",
+      "family": "conflict",
+      "title": "Unidentified looters ransack Olympique de Marseille's official store",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-18, unidentified looters targeted Olympique de Marseille’s official store on La Canebière in Marseille during weekend unrest. The club reported significant property damage and said the store would close temporarily; no casualties were reported.",
+      "event_date": "2026-10-18",
+      "observed_at": "2026-10-19T14:00:00.000Z",
+      "event_date_basis": "relative_date",
+      "event_date_evidence": "The store was looted “during weekend unrest”; the article was published Monday, October 19, 2026, so the weekend ended October 18.",
+      "coded_at": "2026-10-19T15:09:54Z",
+      "updated_at": "2026-10-19T16:13:46Z",
+      "processed_at": "2026-10-19T15:09:54Z",
+      "category": "Riots",
+      "subcategory": "Mob violence",
+      "subcategory_label": "Mob violence",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Provence-Alpes-Côte d'Azur",
+        "location": "Marseille",
+        "latitude": 43.2965,
+        "longitude": 5.3698,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Unidentified looters (France)",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.3074,
+        "severity_tier": "low",
+        "goldstein_scale": -9.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.76,
+        "article_count": 18,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "17cfa18ea959",
+          "url": "https://gdeltcloud.com/stories/protests-turn-marseille-streets-into-a-battleground-in-franc-17cfa18e",
+          "title": "Protests turn Marseille streets into a battleground in France",
+          "story_date": "2026-10-19",
+          "article_count": 18
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.vanguardngr.com/2026/10/marseilles-official-store-looted-as-protests-rock-france/",
+          "title": "Marseille's official store looted as protests rock France",
+          "domain": "vanguardngr.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=vanguardngr.com&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "en",
+          "count": 9
+        },
+        {
+          "language": "no",
+          "count": 3
+        },
+        {
+          "language": "ru",
+          "count": 2
+        },
+        {
+          "language": "de",
+          "count": 1
+        },
+        {
+          "language": "mk",
+          "count": 1
+        },
+        {
+          "language": "pl",
+          "count": 1
+        },
+        {
+          "language": "uk",
+          "count": 1
+        }
+      ],
+      "top_language": "en",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_7c2ad663cdb886d3",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_23e03df02813fe88",
+      "url": "https://gdeltcloud.com/events/rioters-ransack-synagogue-in-pariss-19th-arrondissement--conflict_23e03df02813fe88",
+      "primary_story_url": "https://gdeltcloud.com/stories/rioters-ransack-synagogue-in-paris-amid-nationwide-unrest-959f49ba",
+      "family": "conflict",
+      "title": "Rioters ransack synagogue in Paris’s 19th Arrondissement",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, rioters reportedly ransacked and vandalized a synagogue in Paris’s 19th Arrondissement. Footage described in the report showed religious items and sacred books thrown on the floor and the Torah ark opened. No casualties were reported.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T13:15:00.000Z",
+      "event_date_basis": "relative_date",
+      "event_date_evidence": "The synagogue was vandalized “over the weekend”; source coverage is from the 2026-10-17/18 publication window.",
+      "coded_at": "2026-10-18T14:08:52Z",
+      "updated_at": "2026-10-18T14:11:18Z",
+      "processed_at": "2026-10-18T14:08:52Z",
+      "category": "Riots",
+      "subcategory": "Mob violence",
+      "subcategory_label": "Mob violence",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Île-de-France",
+        "location": "Paris",
+        "latitude": 48.8827,
+        "longitude": 2.3822,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Rioters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2959,
+        "severity_tier": "low",
+        "goldstein_scale": -9.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.78,
+        "article_count": 5,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "959f49badd07",
+          "url": "https://gdeltcloud.com/stories/rioters-ransack-synagogue-in-paris-amid-nationwide-unrest-959f49ba",
+          "title": "Rioters ransack synagogue in Paris amid nationwide unrest",
+          "story_date": "2026-10-18",
+          "article_count": 5
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.israelnationalnews.com/news/434772",
+          "title": "Shocking footage: Rioters ransack Paris synagogue",
+          "domain": "israelnationalnews.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=israelnationalnews.com&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "en",
+          "count": 5
+        }
+      ],
+      "top_language": "en",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_23e03df02813fe88",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_778e317edd2f57fe",
+      "url": "https://gdeltcloud.com/events/polisario-supporters-vandalize-moroccan-consulate-in-orly--conflict_778e317edd2f57fe",
+      "primary_story_url": "https://gdeltcloud.com/stories/polisario-supporters-vandalize-moroccan-consulate-at-orly-fr-a492aaa7",
+      "family": "conflict",
+      "title": "Polisario supporters vandalize Moroccan consulate in Orly",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-16, individuals claiming affiliation with the Polisario reportedly vandalized the Moroccan consulate in Orly, damaging several walls with political inscriptions. The consulate said five people were involved and three had been arrested.",
+      "event_date": "2026-10-16",
+      "observed_at": "2026-10-17T11:00:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The consulate said the vandalism occurred during the night of October 15 to 16.",
+      "coded_at": "2026-10-17T12:05:06Z",
+      "updated_at": "2026-10-17T12:11:10Z",
+      "processed_at": "2026-10-17T12:05:06Z",
+      "category": "Riots",
+      "subcategory": "Mob violence",
+      "subcategory_label": "Mob violence",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Île-de-France",
+        "location": "Orly",
+        "latitude": 48.7439,
+        "longitude": 2.3928,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "Morocco"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Polisario supporters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2935,
+        "severity_tier": "low",
+        "goldstein_scale": -9.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.82,
+        "article_count": 3,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "a492aaa71cf6",
+          "url": "https://gdeltcloud.com/stories/polisario-supporters-vandalize-moroccan-consulate-at-orly-fr-a492aaa7",
+          "title": "Polisario supporters vandalize Moroccan consulate at Orly, France",
+          "story_date": "2026-10-17",
+          "article_count": 3
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.yabiladi.com/articles/details/205145/france-consulat-maroc-orly-vandalise.html",
+          "title": "France : le consulat du Maroc à Orly vandalisé par des partisans du Polisario",
+          "domain": "yabiladi.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=yabiladi.com&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 2
+        },
+        {
+          "language": "en",
+          "count": 1
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_778e317edd2f57fe",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_417f829716a89b0f",
+      "url": "https://gdeltcloud.com/events/rioters-bring-saint-etienne-city-hall-close-to-destruction--conflict_417f829716a89b0f",
+      "primary_story_url": "https://gdeltcloud.com/stories/violence-at-saint-etienne-protest-nearly-destroys-city-hall-fe331e65",
+      "family": "conflict",
+      "title": "Rioters bring Saint-Étienne city hall close to destruction",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, several hundred rioters reportedly moved in groups through Saint-Étienne during a demonstration supporting high school students and opposing the cost of living. The mayor said police intervention prevented the city hall from being destroyed. The article reports no fatalities or injuries.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T12:30:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article says the violence occurred on Saturday, 17 October, during the mobilization; the source window is 2026-10-17/18.",
+      "coded_at": "2026-10-18T13:13:18Z",
+      "updated_at": "2026-10-18T14:11:18Z",
+      "processed_at": "2026-10-18T13:13:18Z",
+      "category": "Riots",
+      "subcategory": "Mob violence",
+      "subcategory_label": "Mob violence",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Auvergne-Rhône-Alpes",
+        "location": "Saint-Étienne",
+        "latitude": 45.4397,
+        "longitude": 4.3872,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Rioters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.29,
+        "severity_tier": "low",
+        "goldstein_scale": -9.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.9,
+        "article_count": 1,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "fe331e65fd9b",
+          "url": "https://gdeltcloud.com/stories/violence-at-saint-etienne-protest-nearly-destroys-city-hall-fe331e65",
+          "title": "Violence at Saint-Étienne protest nearly destroys city hall",
+          "story_date": "2026-10-18",
+          "article_count": 1
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.ici.fr/auvergne-rhone-alpes/loire-42/saint-etienne/mobilisation-du-17-octobre-a-quelques-minutes-pres-il-n-y-avait-plus-d-hotel-de-ville-a-saint-etienne-8876310",
+          "title": "VIDÉO - Mobilisation du 17 octobre : \"À quelques minutes près, il n'y avait plus d'hôtel de ville à Saint-Étienne\"",
+          "domain": "ici.fr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=ici.fr&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 1
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_417f829716a89b0f",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_30e3f2eaed38c952",
+      "url": "https://gdeltcloud.com/events/marseille-rioters-burn-jewish-owned-businesses--conflict_30e3f2eaed38c952",
+      "primary_story_url": "https://gdeltcloud.com/stories/french-journalist-says-jewish-owned-businesses-were-targeted-61f034b5",
+      "family": "conflict",
+      "title": "Marseille rioters burn Jewish-owned businesses",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, rioters in Marseille reportedly set Jewish-owned businesses on fire. Journalist Paul Amar said Muslim-owned stores on the same street were not targeted and alleged that rioters had compiled addresses in advance. The article reports no fatalities or injuries from this Marseille incident.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T20:45:00.000Z",
+      "event_date_basis": "relative_date",
+      "event_date_evidence": "The article says the violence continued “on Saturday”; the source was published on October 18, 2026.",
+      "coded_at": "2026-10-18T21:13:57Z",
+      "updated_at": "2026-10-18T22:12:04Z",
+      "processed_at": "2026-10-18T21:13:57Z",
+      "category": "Riots",
+      "subcategory": "Mob violence",
+      "subcategory_label": "Mob violence",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Provence-Alpes-Côte d'Azur",
+        "location": "Marseille",
+        "latitude": 43.2965,
+        "longitude": 5.3698,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Rioters in Marseille",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2885,
+        "severity_tier": "low",
+        "goldstein_scale": -9.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.72,
+        "article_count": 3,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "61f034b5bfa8",
+          "url": "https://gdeltcloud.com/stories/french-journalist-says-jewish-owned-businesses-were-targeted-61f034b5",
+          "title": "French journalist says Jewish-owned businesses were targeted in Marseille riots",
+          "story_date": "2026-10-18",
+          "article_count": 3
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://humanevents.com/2026/10/18/french-woman-owner-begs-rioters-not-to-destroy-her-shop-they-push-her-aside-ransack-it-burn-jewish-stores-and-leave-muslim-ones-alone",
+          "title": "French woman owner begs rioters not to destroy her shop—they push her aside, ransack it, burn Jewish stores and leave Muslim ones alone",
+          "domain": "humanevents.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=humanevents.com&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "en",
+          "count": 3
+        }
+      ],
+      "top_language": "en",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_30e3f2eaed38c952",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_826582cdd22e1cc5",
+      "url": "https://gdeltcloud.com/events/unidentified-rioters-attack-cnews-headquarters-in-paris--conflict_826582cdd22e1cc5",
+      "primary_story_url": "https://gdeltcloud.com/stories/unknown-attackers-target-cnews-headquarters-amid-paris-prote-857fab2f",
+      "family": "conflict",
+      "title": "Unidentified rioters attack CNEWS headquarters in Paris",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, around one hundred hooded people reportedly attacked CNEWS headquarters in Paris. The article provides no further details about damage, injuries, or arrests.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-17T12:00:00.000Z",
+      "event_date_basis": "publication_day_inference",
+      "event_date_evidence": "The article reports that around one hundred hooded people attacked CNEWS headquarters but gives no separate occurrence date; the article is dated October 17.",
+      "coded_at": "2026-10-17T13:04:26Z",
+      "updated_at": "2026-10-17T13:11:57Z",
+      "processed_at": "2026-10-17T13:04:26Z",
+      "category": "Riots",
+      "subcategory": "Mob violence",
+      "subcategory_label": "Mob violence",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Île-de-France",
+        "location": "Paris",
+        "latitude": 48.8566,
+        "longitude": 2.3522,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Unidentified rioters (France)",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.285,
+        "severity_tier": "low",
+        "goldstein_scale": -9.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.65,
+        "article_count": 3,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "857fab2f2b3c",
+          "url": "https://gdeltcloud.com/stories/unknown-attackers-target-cnews-headquarters-amid-paris-prote-857fab2f",
+          "title": "Unknown attackers target CNEWS headquarters amid Paris protests",
+          "story_date": "2026-10-17",
+          "article_count": 3
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "e_1aa96e95312ecee9",
+          "id_space": "spine",
+          "name": "CNews",
+          "type": "organization",
+          "entity_id": "e_1aa96e95312ecee9",
+          "spine_id": "e_1aa96e95312ecee9",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/CNews",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_1aa96e95312ecee9"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": false,
+            "total": 0,
+            "status": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:2ed83664ba4949154396",
+          "id_space": "llm",
+          "name": "Lagardère News",
+          "type": "organization",
+          "entity_id": "llm:2ed83664ba4949154396",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:2ed83664ba4949154396"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:9e486a9f5aeb59492048",
+          "id_space": "llm",
+          "name": "Paris Police Prefecture",
+          "type": "organization",
+          "entity_id": "llm:9e486a9f5aeb59492048",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:9e486a9f5aeb59492048"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "e_965e899135c5ae33",
+          "id_space": "spine",
+          "name": "Le Journal du Dimanche",
+          "type": "organization",
+          "entity_id": "e_965e899135c5ae33",
+          "spine_id": "e_965e899135c5ae33",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Journal_du_Dimanche",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_965e899135c5ae33"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": false,
+            "total": 0,
+            "status": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://ura.news/news/1053136917",
+          "title": "Протесты в Париже 17 октября: последние новости, неизвестные атаковали штаб-квартиру CNEWS",
+          "domain": "ura.news",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=ura.news&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "ru",
+          "count": 2
+        },
+        {
+          "language": "fr",
+          "count": 1
+        }
+      ],
+      "top_language": "ru",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_826582cdd22e1cc5",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_640bf9fcf8f4344c",
+      "url": "https://gdeltcloud.com/events/grenoble-rioters-loot-shops-and-damage-storefronts--conflict_640bf9fcf8f4344c",
+      "primary_story_url": "https://gdeltcloud.com/stories/riots-and-looting-erupt-in-grenoble-france-on-unprecedented-67ce5afa",
+      "family": "conflict",
+      "title": "Grenoble rioters loot shops and damage storefronts",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, rioters reportedly looted clothing and shoe stores and broke through protective barriers in Grenoble. The article contrasts the rioters with thousands of residents who demonstrated peacefully; no casualty figures are reported.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-17T15:15:00.000Z",
+      "event_date_basis": "publication_day_inference",
+      "event_date_evidence": "The article headline reports riots and looting in Grenoble; the article is dated 2026-10-17 and gives no separate occurrence date.",
+      "coded_at": "2026-10-17T16:09:08Z",
+      "updated_at": "2026-10-17T16:13:26Z",
+      "processed_at": "2026-10-17T16:09:08Z",
+      "category": "Riots",
+      "subcategory": "Mob violence",
+      "subcategory_label": "Mob violence",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Auvergne-Rhône-Alpes",
+        "location": "Grenoble",
+        "latitude": 45.1885,
+        "longitude": 5.7245,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Rioters in Grenoble",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.283,
+        "severity_tier": "low",
+        "goldstein_scale": -9.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.76,
+        "article_count": 1,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "67ce5afa7182",
+          "url": "https://gdeltcloud.com/stories/riots-and-looting-erupt-in-grenoble-france-on-unprecedented-67ce5afa",
+          "title": "Riots and looting erupt in Grenoble, France, on unprecedented scale",
+          "story_date": "2026-10-17",
+          "article_count": 1
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "llm:03f5610a8649261d56d2",
+          "id_space": "llm",
+          "name": "Guillaume Gontard",
+          "type": "person",
+          "entity_id": "llm:03f5610a8649261d56d2",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:03f5610a8649261d56d2"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://www.ledauphine.com/faits-divers-justice/2026/10/17/isere-grenoble-en-proie-a-des-emeutes-d-une-ampleur-inedite",
+          "title": "Isère. Grenoble en proie à des émeutes d'une ampleur inédite",
+          "domain": "ledauphine.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=ledauphine.com&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 1
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_640bf9fcf8f4344c",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_0599a66a7f08b372",
+      "url": "https://gdeltcloud.com/events/protesters-force-their-way-into-marseille-city-hall--conflict_0599a66a7f08b372",
+      "primary_story_url": "https://gdeltcloud.com/stories/protests-in-france-announced-to-continue-today-bffdc6bf",
+      "family": "conflict",
+      "title": "Protesters force their way into Marseille city hall",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, several dozen protesters forced their way into the lobby of Marseille city hall near the Old Port. They shouted slogans, and one reportedly spray-painted an anarchist symbol before law enforcement dispersed them.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-17T13:30:00.000Z",
+      "event_date_basis": "relative_date",
+      "event_date_evidence": "The article says several dozen protesters entered city hall on Saturday; the article was published in the October 16–17 window, and October 17 was Saturday.",
+      "coded_at": "2026-10-17T14:16:02Z",
+      "updated_at": "2026-10-18T12:09:30Z",
+      "processed_at": "2026-10-17T14:16:02Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Provence-Alpes-Côte d'Azur",
+        "location": "Marseille",
+        "latitude": 43.2965,
+        "longitude": 5.3698,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Protesters",
+          "country": "France",
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2815,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.88,
+        "article_count": 217,
+        "evidence_source_count": 16,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 15,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "bffdc6bf393c",
+          "url": "https://gdeltcloud.com/stories/protests-in-france-announced-to-continue-today-bffdc6bf",
+          "title": "Protests in France announced to continue today",
+          "story_date": "2026-10-17",
+          "article_count": 217
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "llm:564a1bdae32861f47186",
+          "id_space": "llm",
+          "name": "Yellow Vests",
+          "type": "organization",
+          "entity_id": "llm:564a1bdae32861f47186",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:564a1bdae32861f47186"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:c3d504acde401d5d66a8",
+          "id_space": "llm",
+          "name": "Yellow Vests movement",
+          "type": "organization",
+          "entity_id": "llm:c3d504acde401d5d66a8",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:c3d504acde401d5d66a8"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "e_abf6b4a7b6646863",
+          "id_space": "spine",
+          "name": "Emmanuel Macron",
+          "type": "person",
+          "entity_id": "e_abf6b4a7b6646863",
+          "spine_id": "e_abf6b4a7b6646863",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Emmanuel_Macron",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_abf6b4a7b6646863"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": true,
+            "total": 4,
+            "status": "current",
+            "offices": [
+              {
+                "office_id": "p_6f74cc17e2639fcd",
+                "name": "Head of state of France",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": "2017-05-14",
+                "end_date": null,
+                "evidence_date": "2026-10-19",
+                "sources": [
+                  {
+                    "source_key": "os_wd_leaders",
+                    "url": "https://www.wikidata.org/wiki/Property:P35"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_9f6638e329b56fbb",
+                "name": "Head of state of Andorra",
+                "country_iso3": "AND",
+                "status": "current",
+                "start_date": "2017-05-01",
+                "end_date": null,
+                "evidence_date": "2026-10-19",
+                "sources": [
+                  {
+                    "source_key": "os_wd_leaders",
+                    "url": "https://www.wikidata.org/wiki/Property:P35"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_e8fa78933393ee57",
+                "name": "Head of State (Co-Prince)",
+                "country_iso3": "AND",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_974bd6f55332ac51",
+                "name": "President",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              }
+            ],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:f646e02e18ea2799db0f",
+          "id_space": "llm",
+          "name": "Emmanuel Macron",
+          "type": "person",
+          "entity_id": "llm:f646e02e18ea2799db0f",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:f646e02e18ea2799db0f"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:cb96602175bcb71a3774",
+          "id_space": "llm",
+          "name": "Benoît Payan",
+          "type": "person",
+          "entity_id": "llm:cb96602175bcb71a3774",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:cb96602175bcb71a3774"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:6ff394a803ef5ccfef4c",
+          "id_space": "llm",
+          "name": "17octobregiletjaune.net",
+          "type": "organization",
+          "entity_id": "llm:6ff394a803ef5ccfef4c",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:6ff394a803ef5ccfef4c"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:ee2cfe933ff0e93e5b87",
+          "id_space": "llm",
+          "name": "Ministry of the Interior (France)",
+          "type": "organization",
+          "entity_id": "llm:ee2cfe933ff0e93e5b87",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:ee2cfe933ff0e93e5b87"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:59f112cf46f9aa9dde79",
+          "id_space": "llm",
+          "name": "Paris Police",
+          "type": "organization",
+          "entity_id": "llm:59f112cf46f9aa9dde79",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:59f112cf46f9aa9dde79"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "e_e867ec9e1d961317",
+          "id_space": "spine",
+          "name": "European Council",
+          "type": "organization",
+          "entity_id": "e_e867ec9e1d961317",
+          "spine_id": "e_e867ec9e1d961317",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/European_Council",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_e867ec9e1d961317"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": false,
+            "total": 0,
+            "status": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://timesofindia.indiatimes.com/world/europe/watch-masked-protesters-briefly-storm-marseille-city-hall-as-protests-turn-violent-in-france/articleshow/135014595.cms",
+          "title": "Watch: Masked protesters briefly storm Marseille city hall as protests turn violent in France",
+          "domain": "timesofindia.indiatimes.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com&sz=64",
+          "rank": 1
+        },
+        {
+          "url": "https://visir.is/g/20262949812d/motmaelendur-redust-inn-i-radhusid-i-marseille",
+          "title": "Mót­mælendur réðust inn í ráð­húsið í Marseille",
+          "domain": "visir.is",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=visir.is&sz=64",
+          "rank": 2
+        },
+        {
+          "url": "https://www.politika.rs/scc/clanak/794426/demonstranti-na-kratko-usli-u-gradsku-skupstinu-u-marseju",
+          "title": "Демонстранти на кратко ушли у градску скупштину у Марсеју",
+          "domain": "politika.rs",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=politika.rs&sz=64",
+          "rank": 3
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "en",
+          "count": 42
+        },
+        {
+          "language": "es",
+          "count": 39
+        },
+        {
+          "language": "pt",
+          "count": 16
+        },
+        {
+          "language": "bs",
+          "count": 15
+        },
+        {
+          "language": "it",
+          "count": 13
+        },
+        {
+          "language": "ru",
+          "count": 11
+        },
+        {
+          "language": "da",
+          "count": 10
+        },
+        {
+          "language": "sr",
+          "count": 9
+        },
+        {
+          "language": "ar",
+          "count": 8
+        },
+        {
+          "language": "ro",
+          "count": 8
+        },
+        {
+          "language": "sq",
+          "count": 8
+        },
+        {
+          "language": "cs",
+          "count": 5
+        },
+        {
+          "language": "bg",
+          "count": 4
+        },
+        {
+          "language": "fr",
+          "count": 4
+        },
+        {
+          "language": "hr",
+          "count": 3
+        },
+        {
+          "language": "sl",
+          "count": 3
+        },
+        {
+          "language": "sv",
+          "count": 3
+        },
+        {
+          "language": "de",
+          "count": 2
+        },
+        {
+          "language": "hu",
+          "count": 2
+        },
+        {
+          "language": "tr",
+          "count": 2
+        },
+        {
+          "language": "ca",
+          "count": 1
+        },
+        {
+          "language": "et",
+          "count": 1
+        },
+        {
+          "language": "fi",
+          "count": 1
+        },
+        {
+          "language": "is",
+          "count": 1
+        },
+        {
+          "language": "lt",
+          "count": 1
+        },
+        {
+          "language": "mk",
+          "count": 1
+        },
+        {
+          "language": "no",
+          "count": 1
+        },
+        {
+          "language": "pl",
+          "count": 1
+        },
+        {
+          "language": "sk",
+          "count": 1
+        },
+        {
+          "language": "uk",
+          "count": 1
+        }
+      ],
+      "top_language": "en",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_0599a66a7f08b372",
+        "resolution": "llm",
+        "confidence": 0.88
+      }
+    },
+    {
+      "id": "conflict_8bdc7513dd8ba093",
+      "url": "https://gdeltcloud.com/events/besancon-protesters-loot-shops-and-target-law-enforcement--conflict_8bdc7513dd8ba093",
+      "primary_story_url": "https://gdeltcloud.com/stories/jd-vance-blames-immigration-for-violence-in-france-44794261",
+      "family": "conflict",
+      "title": "Besançon protesters loot shops and target law enforcement",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, a demonstration in Besançon involved clashes between demonstrators and law enforcement. Shops were looted, the Doubs prefecture was reportedly targeted in an attempted arson, and law enforcement officers were targeted; no fatalities or injuries were reported in the article.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T08:15:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article describes the demonstration and associated violence as occurring on 17 October 2026.",
+      "coded_at": "2026-10-18T09:09:25Z",
+      "updated_at": "2026-10-18T10:12:21Z",
+      "processed_at": "2026-10-18T09:09:25Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Bourgogne-Franche-Comté",
+        "location": "Besançon",
+        "latitude": 47.2378,
+        "longitude": 6.0241,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Protesters in Besançon",
+          "country": "France",
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2805,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.86,
+        "article_count": 129,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "44794261191d",
+          "url": "https://gdeltcloud.com/stories/jd-vance-blames-immigration-for-violence-in-france-44794261",
+          "title": "JD Vance blames immigration for violence in France",
+          "story_date": "2026-10-18",
+          "article_count": 129
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.macommune.info/manifestation-du-17-octobre-a-besancon-ludovic-fagaut-appelle-au-calme-et-reclame-que-les-casseurs-paient/",
+          "title": "Manifestation du 17 octobre à Besançon : Ludovic Fagaut appelle au calme et réclame que les casseurs paient",
+          "domain": "macommune.info",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=macommune.info&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "el",
+          "count": 37
+        },
+        {
+          "language": "fr",
+          "count": 22
+        },
+        {
+          "language": "es",
+          "count": 13
+        },
+        {
+          "language": "bs",
+          "count": 8
+        },
+        {
+          "language": "sr",
+          "count": 6
+        },
+        {
+          "language": "ar",
+          "count": 5
+        },
+        {
+          "language": "sk",
+          "count": 5
+        },
+        {
+          "language": "cs",
+          "count": 4
+        },
+        {
+          "language": "de",
+          "count": 4
+        },
+        {
+          "language": "en",
+          "count": 3
+        },
+        {
+          "language": "ru",
+          "count": 3
+        },
+        {
+          "language": "zh",
+          "count": 3
+        },
+        {
+          "language": "fi",
+          "count": 2
+        },
+        {
+          "language": "lt",
+          "count": 2
+        },
+        {
+          "language": "ro",
+          "count": 2
+        },
+        {
+          "language": "da",
+          "count": 1
+        },
+        {
+          "language": "hr",
+          "count": 1
+        },
+        {
+          "language": "is",
+          "count": 1
+        },
+        {
+          "language": "it",
+          "count": 1
+        },
+        {
+          "language": "mk",
+          "count": 1
+        },
+        {
+          "language": "no",
+          "count": 1
+        },
+        {
+          "language": "pt",
+          "count": 1
+        },
+        {
+          "language": "sl",
+          "count": 1
+        },
+        {
+          "language": "sq",
+          "count": 1
+        },
+        {
+          "language": "sv",
+          "count": 1
+        }
+      ],
+      "top_language": "el",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_8bdc7513dd8ba093",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_8f1b85dbcc6b988b",
+      "url": "https://gdeltcloud.com/events/bordeaux-rioters-loot-and-damage-businesses-during-evening-v--conflict_8f1b85dbcc6b988b",
+      "primary_story_url": "https://gdeltcloud.com/stories/jd-vance-blames-immigration-for-violence-in-france-44794261",
+      "family": "conflict",
+      "title": "Bordeaux rioters loot and damage businesses during evening violence",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, groups reportedly looted and damaged businesses in central Bordeaux during an evening of violence. The article also reports broader violence and arrests across France, but those nationwide figures are not assigned to this Bordeaux event.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T11:00:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article says violence and looting occurred on Saturday, October 17, and describes an evening of destruction in central Bordeaux.",
+      "coded_at": "2026-10-18T12:04:42Z",
+      "updated_at": "2026-10-18T12:11:20Z",
+      "processed_at": "2026-10-18T12:04:42Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Nouvelle-Aquitaine",
+        "location": "Bordeaux",
+        "latitude": 44.8378,
+        "longitude": -0.5792,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Rioters in Bordeaux",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2705,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.66,
+        "article_count": 129,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "44794261191d",
+          "url": "https://gdeltcloud.com/stories/jd-vance-blames-immigration-for-violence-in-france-44794261",
+          "title": "JD Vance blames immigration for violence in France",
+          "story_date": "2026-10-18",
+          "article_count": 129
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.sudouest.fr/societe/violences-du-17-octobre-1-800-personnes-ont-ete-interpellees-en-france-selon-le-ministre-de-l-interieur-31127051.php",
+          "title": "Violences du 17 octobre : 1 800 personnes ont été interpellées en France, selon le ministre de l'Intérieur",
+          "domain": "sudouest.fr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=sudouest.fr&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "el",
+          "count": 37
+        },
+        {
+          "language": "fr",
+          "count": 22
+        },
+        {
+          "language": "es",
+          "count": 13
+        },
+        {
+          "language": "bs",
+          "count": 8
+        },
+        {
+          "language": "sr",
+          "count": 6
+        },
+        {
+          "language": "ar",
+          "count": 5
+        },
+        {
+          "language": "sk",
+          "count": 5
+        },
+        {
+          "language": "cs",
+          "count": 4
+        },
+        {
+          "language": "de",
+          "count": 4
+        },
+        {
+          "language": "en",
+          "count": 3
+        },
+        {
+          "language": "ru",
+          "count": 3
+        },
+        {
+          "language": "zh",
+          "count": 3
+        },
+        {
+          "language": "fi",
+          "count": 2
+        },
+        {
+          "language": "lt",
+          "count": 2
+        },
+        {
+          "language": "ro",
+          "count": 2
+        },
+        {
+          "language": "da",
+          "count": 1
+        },
+        {
+          "language": "hr",
+          "count": 1
+        },
+        {
+          "language": "is",
+          "count": 1
+        },
+        {
+          "language": "it",
+          "count": 1
+        },
+        {
+          "language": "mk",
+          "count": 1
+        },
+        {
+          "language": "no",
+          "count": 1
+        },
+        {
+          "language": "pt",
+          "count": 1
+        },
+        {
+          "language": "sl",
+          "count": 1
+        },
+        {
+          "language": "sq",
+          "count": 1
+        },
+        {
+          "language": "sv",
+          "count": 1
+        }
+      ],
+      "top_language": "el",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_8f1b85dbcc6b988b",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_d00f2e6588b477c5",
+      "url": "https://gdeltcloud.com/events/unidentified-rioters-burn-historic-french-town-hall-tower-co--conflict_d00f2e6588b477c5",
+      "primary_story_url": "https://gdeltcloud.com/stories/rioting-in-france-sets-limoges-city-hall-ablaze-during-cost-10b77e77",
+      "family": "conflict",
+      "title": "Unidentified rioters burn historic French town hall, tower collapses",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-18, rioters reportedly set fire to a historic town hall in France, causing its tower to collapse. The article does not identify the town or report any casualties.",
+      "event_date": "2026-10-18",
+      "observed_at": "2026-10-18T08:00:00.000Z",
+      "event_date_basis": "publication_day_inference",
+      "event_date_evidence": "The article published on 2026-10-18 reports rioters set fire to a historic town hall and its tower collapsed; no separate occurrence date is given.",
+      "coded_at": "2026-10-18T09:04:40Z",
+      "updated_at": "2026-10-19T20:41:53Z",
+      "processed_at": "2026-10-18T09:04:40Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": null,
+        "location": null,
+        "latitude": 46.2276,
+        "longitude": 2.2137000000000002,
+        "geo_precision": 3,
+        "geo_precision_label": "country_or_region"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Unidentified Rioters (France)",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2665,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.58,
+        "article_count": 154,
+        "evidence_source_count": 2,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 2,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "10b77e777fb9",
+          "url": "https://gdeltcloud.com/stories/rioting-in-france-sets-limoges-city-hall-ablaze-during-cost-10b77e77",
+          "title": "Rioting in France sets Limoges city hall ablaze during cost-of-living protests",
+          "story_date": "2026-10-18",
+          "article_count": 154
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "llm:783383363b1b862167ee",
+          "id_space": "llm",
+          "name": "Limoges City Hall",
+          "type": "organization",
+          "entity_id": "llm:783383363b1b862167ee",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:783383363b1b862167ee"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:4e2a350fe84b26bb275b",
+          "id_space": "llm",
+          "name": "Maurice Barate",
+          "type": "person",
+          "entity_id": "llm:4e2a350fe84b26bb275b",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:4e2a350fe84b26bb275b"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "e_abf6b4a7b6646863",
+          "id_space": "spine",
+          "name": "Emmanuel Macron",
+          "type": "person",
+          "entity_id": "e_abf6b4a7b6646863",
+          "spine_id": "e_abf6b4a7b6646863",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Emmanuel_Macron",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_abf6b4a7b6646863"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": true,
+            "total": 4,
+            "status": "current",
+            "offices": [
+              {
+                "office_id": "p_6f74cc17e2639fcd",
+                "name": "Head of state of France",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": "2017-05-14",
+                "end_date": null,
+                "evidence_date": "2026-10-19",
+                "sources": [
+                  {
+                    "source_key": "os_wd_leaders",
+                    "url": "https://www.wikidata.org/wiki/Property:P35"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_9f6638e329b56fbb",
+                "name": "Head of state of Andorra",
+                "country_iso3": "AND",
+                "status": "current",
+                "start_date": "2017-05-01",
+                "end_date": null,
+                "evidence_date": "2026-10-19",
+                "sources": [
+                  {
+                    "source_key": "os_wd_leaders",
+                    "url": "https://www.wikidata.org/wiki/Property:P35"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_e8fa78933393ee57",
+                "name": "Head of State (Co-Prince)",
+                "country_iso3": "AND",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_974bd6f55332ac51",
+                "name": "President",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              }
+            ],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:ad7a57df487a3078d210",
+          "id_space": "llm",
+          "name": "Emilie Abrantes",
+          "type": "person",
+          "entity_id": "llm:ad7a57df487a3078d210",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:ad7a57df487a3078d210"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:d9980449c344901276b6",
+          "id_space": "llm",
+          "name": "Laurent Nuñez",
+          "type": "person",
+          "entity_id": "llm:d9980449c344901276b6",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:d9980449c344901276b6"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:4c041d2fb39058b035c3",
+          "id_space": "llm",
+          "name": "LCI",
+          "type": "organization",
+          "entity_id": "llm:4c041d2fb39058b035c3",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:4c041d2fb39058b035c3"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://www.lrytas.lt/pasaulis/ivykiai/2026/10/18/news/prancuzijoje-riausininkai-padege-istorine-rotuse-sugriuvo-bokstas-44510535",
+          "title": "Prancūzijoje riaušininkai padegė istorinę rotušę: sugriuvo bokštas",
+          "domain": "lrytas.lt",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=lrytas.lt&sz=64",
+          "rank": 1
+        },
+        {
+          "url": "https://arabic.euronews.com/2026/10/18/france-protests-historic-limoges-town-hall-tower-collapse-intentional-fire-macron-condemns",
+          "title": "شوارع فرنسا تشتعل.. انهيار برج بلدية ليموج التاريخي جراء حريق متعمد وماكرون يتوعد الجناة",
+          "domain": "arabic.euronews.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=arabic.euronews.com&sz=64",
+          "rank": 2
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "en",
+          "count": 34
+        },
+        {
+          "language": "es",
+          "count": 22
+        },
+        {
+          "language": "ru",
+          "count": 10
+        },
+        {
+          "language": "fr",
+          "count": 9
+        },
+        {
+          "language": "ar",
+          "count": 6
+        },
+        {
+          "language": "de",
+          "count": 6
+        },
+        {
+          "language": "el",
+          "count": 6
+        },
+        {
+          "language": "it",
+          "count": 5
+        },
+        {
+          "language": "no",
+          "count": 5
+        },
+        {
+          "language": "bg",
+          "count": 4
+        },
+        {
+          "language": "cs",
+          "count": 4
+        },
+        {
+          "language": "lt",
+          "count": 4
+        },
+        {
+          "language": "pt",
+          "count": 4
+        },
+        {
+          "language": "ro",
+          "count": 4
+        },
+        {
+          "language": "zh",
+          "count": 4
+        },
+        {
+          "language": "pl",
+          "count": 3
+        },
+        {
+          "language": "bs",
+          "count": 2
+        },
+        {
+          "language": "da",
+          "count": 2
+        },
+        {
+          "language": "fi",
+          "count": 2
+        },
+        {
+          "language": "hr",
+          "count": 2
+        },
+        {
+          "language": "mk",
+          "count": 2
+        },
+        {
+          "language": "sr",
+          "count": 2
+        },
+        {
+          "language": "sv",
+          "count": 2
+        },
+        {
+          "language": "tr",
+          "count": 2
+        },
+        {
+          "language": "uk",
+          "count": 2
+        },
+        {
+          "language": "et",
+          "count": 1
+        },
+        {
+          "language": "hu",
+          "count": 1
+        },
+        {
+          "language": "lv",
+          "count": 1
+        },
+        {
+          "language": "ml",
+          "count": 1
+        },
+        {
+          "language": "nl",
+          "count": 1
+        },
+        {
+          "language": "sq",
+          "count": 1
+        }
+      ],
+      "top_language": "en",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_d00f2e6588b477c5",
+        "resolution": "llm",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "conflict_5e990f6ef850e4d6",
+      "url": "https://gdeltcloud.com/events/black-bloc-and-yellow-vests-protesters-attack-marseille-poli--conflict_5e990f6ef850e4d6",
+      "primary_story_url": "https://gdeltcloud.com/stories/yellow-vest-protesters-students-and-farmers-unite-for-protes-111cb1f0",
+      "family": "conflict",
+      "title": "Black bloc and Yellow Vests protesters attack Marseille police post",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, Black bloc and Yellow Vests participants reportedly attacked a municipal police post during demonstrations in Marseille. Windows were broken and smoke bombs thrown inside; an attempted arson was thwarted, and no injuries were reported. The article also reports damage to nearby shops and burning bins during the demonstrations.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-17T16:00:00.000Z",
+      "event_date_basis": "publication_day_inference",
+      "event_date_evidence": "The article describes attacks during demonstrations as occurring in progress, but gives no explicit occurrence date; the date is inferred from the latest publication day in the provided window.",
+      "coded_at": "2026-10-17T17:04:20Z",
+      "updated_at": "2026-10-17T17:12:30Z",
+      "processed_at": "2026-10-17T17:04:20Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Provence-Alpes-Côte d'Azur",
+        "location": "Marseille",
+        "latitude": 43.2965,
+        "longitude": 5.3698,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Black bloc and Yellow Vests protesters",
+          "country": "France",
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.264,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.53,
+        "article_count": 212,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "111cb1f0e99c",
+          "url": "https://gdeltcloud.com/stories/yellow-vest-protesters-students-and-farmers-unite-for-protes-111cb1f0",
+          "title": "Yellow Vest protesters, students and farmers unite for protests across France",
+          "story_date": "2026-10-17",
+          "article_count": 212
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "llm:c3d504acde401d5d66a8",
+          "id_space": "llm",
+          "name": "Yellow Vests",
+          "type": "organization",
+          "entity_id": "llm:c3d504acde401d5d66a8",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:c3d504acde401d5d66a8"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:564a1bdae32861f47186",
+          "id_space": "llm",
+          "name": "Yellow Vests",
+          "type": "organization",
+          "entity_id": "llm:564a1bdae32861f47186",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:564a1bdae32861f47186"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:6ff394a803ef5ccfef4c",
+          "id_space": "llm",
+          "name": "17octobregiletjaune.net",
+          "type": "organization",
+          "entity_id": "llm:6ff394a803ef5ccfef4c",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:6ff394a803ef5ccfef4c"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "e_abf6b4a7b6646863",
+          "id_space": "spine",
+          "name": "Emmanuel Macron",
+          "type": "person",
+          "entity_id": "e_abf6b4a7b6646863",
+          "spine_id": "e_abf6b4a7b6646863",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Emmanuel_Macron",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_abf6b4a7b6646863"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": true,
+            "total": 4,
+            "status": "current",
+            "offices": [
+              {
+                "office_id": "p_6f74cc17e2639fcd",
+                "name": "Head of state of France",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": "2017-05-14",
+                "end_date": null,
+                "evidence_date": "2026-10-19",
+                "sources": [
+                  {
+                    "source_key": "os_wd_leaders",
+                    "url": "https://www.wikidata.org/wiki/Property:P35"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_9f6638e329b56fbb",
+                "name": "Head of state of Andorra",
+                "country_iso3": "AND",
+                "status": "current",
+                "start_date": "2017-05-01",
+                "end_date": null,
+                "evidence_date": "2026-10-19",
+                "sources": [
+                  {
+                    "source_key": "os_wd_leaders",
+                    "url": "https://www.wikidata.org/wiki/Property:P35"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_e8fa78933393ee57",
+                "name": "Head of State (Co-Prince)",
+                "country_iso3": "AND",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              },
+              {
+                "office_id": "p_974bd6f55332ac51",
+                "name": "President",
+                "country_iso3": "FRA",
+                "status": "current",
+                "start_date": null,
+                "end_date": null,
+                "evidence_date": "2026-10-18",
+                "sources": [
+                  {
+                    "source_key": "os_us_cia_world_leaders",
+                    "url": "https://www.cia.gov/resources/world-leaders/foreign-governments/"
+                  }
+                ]
+              }
+            ],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:ee2cfe933ff0e93e5b87",
+          "id_space": "llm",
+          "name": "Ministry of the Interior (France)",
+          "type": "organization",
+          "entity_id": "llm:ee2cfe933ff0e93e5b87",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:ee2cfe933ff0e93e5b87"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:59f112cf46f9aa9dde79",
+          "id_space": "llm",
+          "name": "Paris Police",
+          "type": "organization",
+          "entity_id": "llm:59f112cf46f9aa9dde79",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:59f112cf46f9aa9dde79"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "e_e867ec9e1d961317",
+          "id_space": "spine",
+          "name": "European Council",
+          "type": "organization",
+          "entity_id": "e_e867ec9e1d961317",
+          "spine_id": "e_e867ec9e1d961317",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/European_Council",
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "e_e867ec9e1d961317"
+          ],
+          "public_official": {
+            "checked": true,
+            "is_public_official": false,
+            "total": 0,
+            "status": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:f646e02e18ea2799db0f",
+          "id_space": "llm",
+          "name": "Emmanuel Macron",
+          "type": "person",
+          "entity_id": "llm:f646e02e18ea2799db0f",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:f646e02e18ea2799db0f"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://www.iltempo.it/news/esteri/black-bloc-e-gilet-gialli-mettono-a-ferro-e-fuoco-la-francia-assalto-a-un-posto-di-polizia-a-marsiglia/",
+          "title": "Black bloc e gilet gialli mettono a ferro e fuoco la Francia. Assalto a un posto di polizia a Marsiglia",
+          "domain": "iltempo.it",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=iltempo.it&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 39
+        },
+        {
+          "language": "el",
+          "count": 33
+        },
+        {
+          "language": "en",
+          "count": 33
+        },
+        {
+          "language": "es",
+          "count": 32
+        },
+        {
+          "language": "ar",
+          "count": 14
+        },
+        {
+          "language": "it",
+          "count": 12
+        },
+        {
+          "language": "pt",
+          "count": 8
+        },
+        {
+          "language": "hr",
+          "count": 5
+        },
+        {
+          "language": "sr",
+          "count": 5
+        },
+        {
+          "language": "sv",
+          "count": 4
+        },
+        {
+          "language": "de",
+          "count": 3
+        },
+        {
+          "language": "no",
+          "count": 3
+        },
+        {
+          "language": "ru",
+          "count": 3
+        },
+        {
+          "language": "zh",
+          "count": 3
+        },
+        {
+          "language": "bs",
+          "count": 2
+        },
+        {
+          "language": "ro",
+          "count": 2
+        },
+        {
+          "language": "sk",
+          "count": 2
+        },
+        {
+          "language": "tr",
+          "count": 2
+        },
+        {
+          "language": "cs",
+          "count": 1
+        },
+        {
+          "language": "fi",
+          "count": 1
+        },
+        {
+          "language": "id",
+          "count": 1
+        },
+        {
+          "language": "mk",
+          "count": 1
+        },
+        {
+          "language": "ms",
+          "count": 1
+        },
+        {
+          "language": "pl",
+          "count": 1
+        },
+        {
+          "language": "sl",
+          "count": 1
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_5e990f6ef850e4d6",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_f777a858e8935560",
+      "url": "https://gdeltcloud.com/events/rioters-set-fire-to-limoges-historic-town-hall--conflict_f777a858e8935560",
+      "primary_story_url": "https://gdeltcloud.com/stories/france-arrests-40-year-old-suspect-in-limoges-town-hall-arso-34059b35",
+      "family": "conflict",
+      "title": "Rioters set fire to Limoges historic town hall",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-20, individuals reportedly involved in demonstrations set fire to the historic town hall in Limoges, France, using Molotov cocktails, according to the article. The fire destroyed the wooden roof and caused extensive damage; a 40-year-old suspect was arrested that day. No fatalities or injuries were reported.",
+      "event_date": "2026-10-20",
+      "observed_at": "2026-10-20T09:00:00.000Z",
+      "event_date_basis": "publication_day_inference",
+      "event_date_evidence": "The article says the fire occurred amid demonstrations and reports that a suspect was arrested “today,” Tuesday 20 October; it does not give a separate date for the fire.",
+      "coded_at": "2026-10-20T10:10:15Z",
+      "updated_at": "2026-10-20T13:40:48Z",
+      "processed_at": "2026-10-20T10:10:15Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Nouvelle-Aquitaine",
+        "location": "Limoges",
+        "latitude": 45.8336,
+        "longitude": 1.2610999999999999,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Unidentified Rioters (France)",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.259,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.78,
+        "article_count": 19,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "34059b35c1cb",
+          "url": "https://gdeltcloud.com/stories/france-arrests-40-year-old-suspect-in-limoges-town-hall-arso-34059b35",
+          "title": "France arrests 40-year-old suspect in Limoges town hall arson",
+          "story_date": "2026-10-20",
+          "article_count": 19
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "llm:a5337b62005d0a40befb",
+          "id_space": "llm",
+          "name": "Limoges Town Hall",
+          "type": "organization",
+          "entity_id": "llm:a5337b62005d0a40befb",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:a5337b62005d0a40befb"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://www.kathimerini.gr/world/564534268/gallia-stachti-to-istoriko-dimarcheio-tis-limoz-nees-eikones-apotyponoyn-to-megethos-tis-katastrofis/",
+          "title": "Γαλλία: Στάχτη το ιστορικό δημαρχείο της Λιμόζ – Νέες εικόνες αποτυπώνουν το μέγεθος της καταστροφής",
+          "domain": "kathimerini.gr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=kathimerini.gr&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "el",
+          "count": 6
+        },
+        {
+          "language": "fr",
+          "count": 3
+        },
+        {
+          "language": "de",
+          "count": 2
+        },
+        {
+          "language": "es",
+          "count": 2
+        },
+        {
+          "language": "cs",
+          "count": 1
+        },
+        {
+          "language": "et",
+          "count": 1
+        },
+        {
+          "language": "pl",
+          "count": 1
+        }
+      ],
+      "top_language": "el",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_f777a858e8935560",
+        "resolution": "llm",
+        "confidence": 0.97
+      }
+    },
+    {
+      "id": "conflict_bc1717cbf22924f3",
+      "url": "https://gdeltcloud.com/events/cost-of-living-protesters-throw-acid-at-police-in-guadeloupe--conflict_bc1717cbf22924f3",
+      "primary_story_url": "https://gdeltcloud.com/stories/cost-of-living-blockades-trigger-violent-clashes-in-guadelou-74d9380b",
+      "family": "conflict",
+      "title": "Cost-of-living protesters throw acid at police in Guadeloupe",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-16, protesters opposing the cost of living clashed with police in the Basse-Terre area of Guadeloupe. According to the gendarmerie, protesters threw acid at police in the Boucan area, and officers responded with tear gas; six police officers were lightly injured.",
+      "event_date": "2026-10-16",
+      "observed_at": "2026-10-16T18:15:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article says six police officers were injured in clashes on Friday; it was published Friday, October 16, 2026.",
+      "coded_at": "2026-10-16T19:22:14Z",
+      "updated_at": "2026-10-16T20:22:09Z",
+      "processed_at": "2026-10-16T19:22:14Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "Guadeloupe",
+        "region": "Caribbean",
+        "continent": "North America",
+        "admin1": "Basse-Terre",
+        "location": "Boucan",
+        "latitude": 16.014,
+        "longitude": -61.735,
+        "geo_precision": 2,
+        "geo_precision_label": "nearby_area"
+      },
+      "geo_context": {
+        "location_country": "Guadeloupe",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Protesters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        },
+        {
+          "name": "Police",
+          "country": "France",
+          "role": "actor2",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2465,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.88,
+        "article_count": 3,
+        "evidence_source_count": 2,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 2,
+      "injured": 6,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "74d9380b78da",
+          "url": "https://gdeltcloud.com/stories/cost-of-living-blockades-trigger-violent-clashes-in-guadelou-74d9380b",
+          "title": "Cost-of-living blockades trigger violent clashes in Guadeloupe",
+          "story_date": "2026-10-16",
+          "article_count": 3
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "llm:c4536bfd7b6a09909f3f",
+          "id_space": "llm",
+          "name": "Thierry Devimeux",
+          "type": "person",
+          "entity_id": "llm:c4536bfd7b6a09909f3f",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:c4536bfd7b6a09909f3f"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:bfb954d018fff60423e4",
+          "id_space": "llm",
+          "name": "French National Gendarmerie",
+          "type": "organization",
+          "entity_id": "llm:bfb954d018fff60423e4",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:bfb954d018fff60423e4"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://www.20minutes.fr/societe/4255085-20261016-guadeloupe-blocages-contre-vie-chere-entrainent-violents-heurts",
+          "title": "Guadeloupe : Des blocages contre la vie chère entraînent de violents heurts",
+          "domain": "20minutes.fr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=20minutes.fr&sz=64",
+          "rank": 1
+        },
+        {
+          "url": "https://www.tf1info.fr/societe/routes-bloquees-policiers-blesses-et-revendications-multiples-que-se-passe-t-il-en-guadeloupe-2470422.html",
+          "title": "Routes bloquées, policiers blessés et revendications multiples... Que se passe-t-il en Guadeloupe ?",
+          "domain": "tf1info.fr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=tf1info.fr&sz=64",
+          "rank": 2
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 3
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_bc1717cbf22924f3",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_71f419d0dd6b16e8",
+      "url": "https://gdeltcloud.com/events/toulon-demonstrators-throw-objects-and-damage-property-durin--conflict_71f419d0dd6b16e8",
+      "primary_story_url": "https://gdeltcloud.com/stories/toulon-detains-20-over-violence-during-october-17-demonstrat-87f0da90",
+      "family": "conflict",
+      "title": "Toulon demonstrators throw objects and damage property during protest",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, violence broke out during a demonstration against the cost of living in Toulon. Authorities said some participants threw objects at police, insulted officers, or caused damage; police arrested 20 people in connection with the violence. The report does not give casualty figures.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T17:30:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article says the violence occurred during the demonstration on October 17 and that the detentions took place that Saturday.",
+      "coded_at": "2026-10-18T18:13:01Z",
+      "updated_at": "2026-10-18T20:10:50Z",
+      "processed_at": "2026-10-18T18:13:01Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Provence-Alpes-Côte d'Azur",
+        "location": "Toulon",
+        "latitude": 43.1242,
+        "longitude": 5.928,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Demonstrators",
+          "country": "France",
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2449,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.91,
+        "article_count": 2,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "87f0da90ce63",
+          "url": "https://gdeltcloud.com/stories/toulon-detains-20-over-violence-during-october-17-demonstrat-87f0da90",
+          "title": "Toulon detains 20 over violence during October 17 demonstration",
+          "story_date": "2026-10-18",
+          "article_count": 2
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.nicematin.com/faits-divers/a-toulon-vingt-personnes-ont-ete-placees-en-garde-a-vue-dans-le-cadre-des-violences-urbaines-commises-lors-de-la-manifestation-du-17-octobre-10743132",
+          "title": "À Toulon, vingt personnes ont été placées en garde à vue dans le cadre des violences urbaines commises lors de la manifestation du 17 octobre",
+          "domain": "nicematin.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=nicematin.com&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 2
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_71f419d0dd6b16e8",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_07e8866975b396b1",
+      "url": "https://gdeltcloud.com/events/rioters-clash-with-french-security-forces-in-pointe-a-pitre--conflict_07e8866975b396b1",
+      "primary_story_url": "https://gdeltcloud.com/stories/urban-violence-injures-three-police-officers-in-guadeloupe-a-1898f2d3",
+      "family": "conflict",
+      "title": "Rioters clash with French security forces in Pointe-à-Pitre",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, groups of rioters reportedly clashed with French security forces overnight in the Pointe-à-Pitre area of Guadeloupe. The article also reports looting and property damage amid tensions surrounding mobilization over the cost of living. No fatalities or injuries were reported.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T17:00:00.000Z",
+      "event_date_basis": "relative_date",
+      "event_date_evidence": "The article says the violence occurred “la nuit dernière” (last night), resolving against the October 18 publication window.",
+      "coded_at": "2026-10-18T18:04:40Z",
+      "updated_at": "2026-10-18T18:11:40Z",
+      "processed_at": "2026-10-18T18:04:40Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Guadeloupe",
+        "location": "Pointe-à-Pitre",
+        "latitude": 16.2415,
+        "longitude": -61.5331,
+        "geo_precision": 2,
+        "geo_precision_label": "nearby_area"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Unidentified Rioters (Guadeloupe)",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        },
+        {
+          "name": "French security forces",
+          "country": "France",
+          "role": "actor2",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.242,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.79,
+        "article_count": 3,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "1898f2d3e84d",
+          "url": "https://gdeltcloud.com/stories/urban-violence-injures-three-police-officers-in-guadeloupe-a-1898f2d3",
+          "title": "Urban violence injures three police officers in Guadeloupe as prefect urges calm",
+          "story_date": "2026-10-18",
+          "article_count": 3
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.guadeloupe.franceantilles.fr/actualite/faits-divers/region-pointoise-pillages-et-affrontements-avec-les-forces-de-lordre-durant-la-nuit-1096631.php",
+          "title": "Région pointoise : pillages et affrontements avec les forces de l'ordre durant la nuit",
+          "domain": "guadeloupe.franceantilles.fr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=guadeloupe.franceantilles.fr&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 3
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_07e8866975b396b1",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_3ed4ccf021d7e9a8",
+      "url": "https://gdeltcloud.com/events/rioters-fire-mortars-at-police-and-vandalize-pau-bus-shelter--conflict_3ed4ccf021d7e9a8",
+      "primary_story_url": "https://gdeltcloud.com/stories/police-arrest-28-after-clashes-with-rioters-in-pau-france-2c678566",
+      "family": "conflict",
+      "title": "Rioters fire mortars at police and vandalize Pau bus shelters",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, groups described as casseurs clashed with police in central Pau for several hours. They reportedly fired mortars and fireworks at police, set a rubbish bin on fire, and vandalized bus shelters; 28 people were placed in police custody. The report does not give a casualty figure.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-17T23:15:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article says clashes began around 1 p.m. on Saturday, October 17.",
+      "coded_at": "2026-10-18T00:07:14Z",
+      "updated_at": "2026-10-18T00:10:56Z",
+      "processed_at": "2026-10-18T00:07:14Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Nouvelle-Aquitaine",
+        "location": "Pau",
+        "latitude": 43.2951,
+        "longitude": -0.3708,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Rioters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        },
+        {
+          "name": "French police",
+          "country": "France",
+          "role": "actor2",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.241,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.92,
+        "article_count": 1,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "2c678566e0c1",
+          "url": "https://gdeltcloud.com/stories/police-arrest-28-after-clashes-with-rioters-in-pau-france-2c678566",
+          "title": "Police arrest 28 after clashes with rioters in Pau, France",
+          "story_date": "2026-10-17",
+          "article_count": 1
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "llm:42c346daec1199a08c6c",
+          "id_space": "llm",
+          "name": "Rodolphe Jarry",
+          "type": "person",
+          "entity_id": "llm:42c346daec1199a08c6c",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:42c346daec1199a08c6c"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://www.larepubliquedespyrenees.fr:443/societe/violences/28-interpellations-ce-samedi-a-pau-apres-les-affrontements-de-casseurs-avec-la-police-31122564.php",
+          "title": "28 interpellations ce samedi à Pau après les affrontements de casseurs avec la police",
+          "domain": "larepubliquedespyrenees.fr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=larepubliquedespyrenees.fr&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 1
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_3ed4ccf021d7e9a8",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_c342f2d7ae5e9d2f",
+      "url": "https://gdeltcloud.com/events/students-fire-mortars-as-french-police-disperse-school-prote--conflict_c342f2d7ae5e9d2f",
+      "primary_story_url": "https://gdeltcloud.com/stories/student-protests-trigger-tensions-and-attempted-school-block-cbb47d32",
+      "family": "conflict",
+      "title": "Students fire mortars as French police disperse school protest",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-14, several dozen students gathered outside Lycée Marcel-Sembat in Sotteville-lès-Rouen and some fired mortar fireworks. Police responded with tear gas to disperse them, and some students then joined demonstrators outside Lycée les Bruyères nearby. No casualties were reported.",
+      "event_date": "2026-10-14",
+      "observed_at": "2026-10-14T12:00:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article says the tensions occurred Wednesday, 14 October, and describes events that morning.",
+      "coded_at": "2026-10-14T13:07:15Z",
+      "updated_at": "2026-10-14T13:41:07Z",
+      "processed_at": "2026-10-14T13:07:15Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Normandy",
+        "location": "Sotteville-lès-Rouen",
+        "latitude": 49.409,
+        "longitude": 1.091,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Students",
+          "country": "France",
+          "role": "actor1",
+          "primary": true
+        },
+        {
+          "name": "French police",
+          "country": "France",
+          "role": "actor2",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2405,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.91,
+        "article_count": 1,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "cbb47d325238",
+          "url": "https://gdeltcloud.com/stories/student-protests-trigger-tensions-and-attempted-school-block-cbb47d32",
+          "title": "Student protests trigger tensions and attempted school blockades near Rouen, France",
+          "story_date": "2026-10-14",
+          "article_count": 1
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.tendanceouest.com/actualite-443314-pres-de-rouen-mouvements-des-lyceens-des-tensions-aux-abords-des-lycees-sembat-et-les-bruyeres",
+          "title": "Près de Rouen. Mouvements des lycéens : des tensions aux abords des lycées Sembat et les Bruyères",
+          "domain": "tendanceouest.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=tendanceouest.com&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 1
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_c342f2d7ae5e9d2f",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_212bd1cbc284748b",
+      "url": "https://gdeltcloud.com/events/chambery-protesters-clash-with-police-and-gendarmes-during-m--conflict_212bd1cbc284748b",
+      "primary_story_url": "https://gdeltcloud.com/stories/about-500-people-block-a-highway-in-chambery-police-officers-deb4417e",
+      "family": "conflict",
+      "title": "Chambéry protesters clash with police and gendarmes during mobilization",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, about 500 people reportedly occupied a highway in Chambéry during actions linked to the national cost-of-living mobilization. The article also reports clashes between demonstrators and security forces in the city center, with police officers and gendarmes injured; it gives no injury count.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T14:00:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article says actions took place on Saturday, October 17, and reports clashes in Chambéry that day.",
+      "coded_at": "2026-10-18T15:04:28Z",
+      "updated_at": "2026-10-18T16:11:08Z",
+      "processed_at": "2026-10-18T15:04:28Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Auvergne-Rhône-Alpes",
+        "location": "Chambéry",
+        "latitude": 45.5646,
+        "longitude": 5.9178,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": [
+          "France"
+        ]
+      },
+      "actors": [
+        {
+          "name": "Protesters",
+          "country": "France",
+          "role": "actor1",
+          "primary": true
+        },
+        {
+          "name": "French police and gendarmerie",
+          "country": "France",
+          "role": "actor2",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.233,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.76,
+        "article_count": 1,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "deb4417e66e2",
+          "url": "https://gdeltcloud.com/stories/about-500-people-block-a-highway-in-chambery-police-officers-deb4417e",
+          "title": "About 500 people block a highway in Chambéry; police officers injured",
+          "story_date": "2026-10-18",
+          "article_count": 1
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://cedarnews.net/francais/1081954/17-octobre-chambery-500-personnes-envahissent-voie/",
+          "title": "17 octobre à Chambéry: 500 personnes envahissent la voie rapide, des policiers et des gendarmes blessés, quel bilan au lendemain de la mobilisation?",
+          "domain": "cedarnews.net",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=cedarnews.net&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 1
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_212bd1cbc284748b",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_7e3f9ab4d4f31254",
+      "url": "https://gdeltcloud.com/events/french-rioters-destroy-property-and-loot-during-nationwide-u--conflict_7e3f9ab4d4f31254",
+      "primary_story_url": "https://gdeltcloud.com/stories/french-president-condemns-riots-as-prime-minister-calls-for-f0487e0e",
+      "family": "conflict",
+      "title": "French rioters destroy property and loot during nationwide unrest",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-18, rioters reportedly destroyed property and looted amid demonstrations in France. The article distinguishes those involved in destruction and looting from the much larger crowd expressing demands; it reports no casualty figures.",
+      "event_date": "2026-10-18",
+      "observed_at": "2026-10-19T17:30:00.000Z",
+      "event_date_basis": "relative_date",
+      "event_date_evidence": "The article, published October 19, says “yesterday” hundreds of thousands took to the streets and distinguishes them from those who destroyed property and looted.",
+      "coded_at": "2026-10-19T18:28:45Z",
+      "updated_at": "2026-10-19T18:28:45Z",
+      "processed_at": "2026-10-19T18:28:45Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": null,
+        "location": null,
+        "latitude": 46.2276,
+        "longitude": 2.2137000000000002,
+        "geo_precision": 3,
+        "geo_precision_label": "country_or_region"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "French rioters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.232,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.74,
+        "article_count": 1,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "f0487e0e30ce",
+          "url": "https://gdeltcloud.com/stories/french-president-condemns-riots-as-prime-minister-calls-for-f0487e0e",
+          "title": "French president condemns riots as prime minister calls for partial curfew",
+          "story_date": "2026-10-19",
+          "article_count": 1
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.lsm.lv/raksts/zinas/arzemes/19.10.2026-francijas-prezidents-nosoda-vardarbigos-grautinus-premjers-aicina-ieviest-daleju-komandantstundu.a668090/",
+          "title": "Francijas prezidents nosoda vardarbīgos grautiņus; premjers aicina ieviest daļēju komandantstundu",
+          "domain": "lsm.lv",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=lsm.lv&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "lv",
+          "count": 1
+        }
+      ],
+      "top_language": "lv",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_7e3f9ab4d4f31254",
+        "resolution": "unadjudicated",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_239c9bd9e2338fc9",
+      "url": "https://gdeltcloud.com/events/protesters-set-fires-and-loot-shops-during-violence-in-tours--conflict_239c9bd9e2338fc9",
+      "primary_story_url": "https://gdeltcloud.com/stories/urban-violence-in-tours-and-joue-les-tours-leads-to-32-arres-d8e4043c",
+      "family": "conflict",
+      "title": "Protesters set fires and loot shops during violence in Tours",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-17, violence continued late into the night in Tours and nearby Joué-lès-Tours amid a large march. The sub-prefect said fires were set and shops were looted, and police had arrested 32 people by the following morning.",
+      "event_date": "2026-10-17",
+      "observed_at": "2026-10-18T10:45:00.000Z",
+      "event_date_basis": "explicit_date",
+      "event_date_evidence": "The article says urban violence continued late into the night on Saturday, October 17, 2026, in Tours and Joué-lès-Tours; arrests rose to 32 by morning.",
+      "coded_at": "2026-10-18T11:17:30Z",
+      "updated_at": "2026-10-18T12:11:20Z",
+      "processed_at": "2026-10-18T11:17:30Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Centre-Val de Loire",
+        "location": "Tours",
+        "latitude": 47.3941,
+        "longitude": 0.6848,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Protesters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.2315,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.73,
+        "article_count": 1,
+        "evidence_source_count": 1,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 1,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "d8e4043cd1bc",
+          "url": "https://gdeltcloud.com/stories/urban-violence-in-tours-and-joue-les-tours-leads-to-32-arres-d8e4043c",
+          "title": "Urban violence in Tours and Joué-lès-Tours leads to 32 arrests",
+          "story_date": "2026-10-18",
+          "article_count": 1
+        }
+      ],
+      "entity_refs": [],
+      "top_articles": [
+        {
+          "url": "https://www.lanouvellerepublique.fr/tours/il-n-y-a-pas-eu-de-defaut-d-apprehension-ou-de-gestion-du-maintien-de-l-ordre-affirme-le-sous-prefet-regis-castro-apres-une-nuit-de-violences-urbaines-1792318229",
+          "title": "\"Il n'y a pas eu de défaut d'appréhension ou de gestion du maintien de l'ordre\" affirme le sous-préfet Régis Castro, après une nuit de violences urbaines à Tours",
+          "domain": "lanouvellerepublique.fr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=lanouvellerepublique.fr&sz=64",
+          "rank": 1
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "fr",
+          "count": 1
+        }
+      ],
+      "top_language": "fr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_239c9bd9e2338fc9",
+        "resolution": "self",
+        "confidence": null
+      }
+    },
+    {
+      "id": "conflict_03a6e246e498565e",
+      "url": "https://gdeltcloud.com/events/protesters-assault-micromania-shopkeeper-and-loot-store-in-n--conflict_03a6e246e498565e",
+      "primary_story_url": "https://gdeltcloud.com/stories/protesters-assault-shopkeeper-defending-micromania-store-in-9892ec1d",
+      "family": "conflict",
+      "title": "Protesters assault Micromania shopkeeper and loot store in Nice",
+      "title_source": "coder_title",
+      "summary": "On 2026-10-19, protesters in Nice reportedly threw objects at Pierre, a shopkeeper who tried to prevent them from entering a Micromania store on Avenue Jean-Médecin. One protester kicked him in the back, knocking him to the ground, and the group ultimately looted the store. The article does not report a confirmed injury count.",
+      "event_date": "2026-10-19",
+      "observed_at": "2026-10-19T07:15:00.000Z",
+      "event_date_basis": "publication_day_inference",
+      "event_date_evidence": "No occurrence date is stated; the article reports the incident as current news within the 2026-10-18/19 publication window.",
+      "coded_at": "2026-10-19T08:17:26Z",
+      "updated_at": "2026-10-20T12:37:34Z",
+      "processed_at": "2026-10-19T08:17:26Z",
+      "category": "Riots",
+      "subcategory": "Violent demonstration",
+      "subcategory_label": "Violent demonstration",
+      "event_description": null,
+      "taxonomy_status": "coded",
+      "domain": "CONFLICT",
+      "event_code": null,
+      "geo": {
+        "country": "France",
+        "region": "Europe",
+        "continent": "Europe",
+        "admin1": "Provence-Alpes-Côte d'Azur",
+        "location": "Nice",
+        "latitude": 43.7034,
+        "longitude": 7.2663,
+        "geo_precision": 1,
+        "geo_precision_label": "exact_place"
+      },
+      "geo_context": {
+        "location_country": "France",
+        "actor_origin_countries": []
+      },
+      "actors": [
+        {
+          "name": "Protesters",
+          "country": null,
+          "role": "actor1",
+          "primary": true
+        }
+      ],
+      "metrics": {
+        "significance": 0.231,
+        "severity_tier": "low",
+        "goldstein_scale": -7.5,
+        "magnitude": null,
+        "systemic_importance": null,
+        "propagation_potential": null,
+        "market_sensitivity": null,
+        "confidence": 0.72,
+        "article_count": 1,
+        "evidence_source_count": 3,
+        "supporting_story_count": 1
+      },
+      "has_fatalities": false,
+      "fatalities": 0,
+      "fatalities_basis": "none_reported",
+      "fatalities_corroboration": "none_reported",
+      "fatalities_evidence": null,
+      "fatalities_supporting_source_count": 3,
+      "injured": null,
+      "civilians_killed": null,
+      "civilians_injured": null,
+      "civilian_targeting": false,
+      "civilian_targeting_label": null,
+      "story_refs": [
+        {
+          "id": "9892ec1dbf23",
+          "url": "https://gdeltcloud.com/stories/protesters-assault-shopkeeper-defending-micromania-store-in-9892ec1d",
+          "title": "Protesters assault shopkeeper defending Micromania store in Nice, France",
+          "story_date": "2026-10-19",
+          "article_count": 1
+        }
+      ],
+      "entity_refs": [
+        {
+          "id": "llm:f7b973a07e24ca5aeabb",
+          "id_space": "llm",
+          "name": "Pierre",
+          "type": "person",
+          "entity_id": "llm:f7b973a07e24ca5aeabb",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:f7b973a07e24ca5aeabb"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        },
+        {
+          "id": "llm:8fdab918c30045bed83e",
+          "id_space": "llm",
+          "name": "Micromania",
+          "type": "organization",
+          "entity_id": "llm:8fdab918c30045bed83e",
+          "spine_id": null,
+          "wikipedia_url": null,
+          "image_url": null,
+          "avatar_url": null,
+          "source_entity_ids": [
+            "llm:8fdab918c30045bed83e"
+          ],
+          "public_official": {
+            "checked": false,
+            "is_public_official": null,
+            "status": null,
+            "total": null,
+            "offices": [],
+            "truncated": false
+          }
+        }
+      ],
+      "top_articles": [
+        {
+          "url": "https://net.hr/danas/svijet/snimka-iz-francuske-prodavac-stao-pred-prosvjednike-evo-sto-je-uslijedilo-ef534bb9-cb81-11f1-936f-9600040c8f8e",
+          "title": "Snimka iz Francuske - Prodavač stao pred prosvjednike, evo što je uslijedilo",
+          "domain": "net.hr",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=net.hr&sz=64",
+          "rank": 1
+        },
+        {
+          "url": "https://es.euronews.com/2026/10/19/asi-plantaron-cara-los-comerciantes-a-los-saqueadores-en-los-disturbios-de-francia",
+          "title": "Así plantaron cara los comerciantes a los saqueadores en los disturbios de Francia",
+          "domain": "es.euronews.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=es.euronews.com&sz=64",
+          "rank": 2
+        },
+        {
+          "url": "https://gazeta-shqip.com/lifestyle/shitesi-perballet-me-protestuesit-per-te-mbrojtur-dyqanin-goditet-me-shqelm-dhe-rrezohet-ne-toke-video/",
+          "title": "Shitësi përballet me protestuesit për të mbrojtur dyqanin, goditet me shqelm dhe rrëzohet në tokë/VIDEO!",
+          "domain": "gazeta-shqip.com",
+          "domain_avatar_url": "https://www.google.com/s2/favicons?domain=gazeta-shqip.com&sz=64",
+          "rank": 3
+        }
+      ],
+      "language_breakdown": [
+        {
+          "language": "hr",
+          "count": 1
+        }
+      ],
+      "top_language": "hr",
+      "search_score": null,
+      "incident": {
+        "uid": "conflict_03a6e246e498565e",
+        "resolution": "self",
+        "confidence": null
+      }
+    }
+  ],
+  "pagination": {
+    "limit": 25,
+    "cursor": null,
+    "next_cursor": null
+  },
+  "sort": "significance",
+  "applied_filters": {
+    "days": "7",
+    "country": [
+      "FRA"
+    ],
+    "country_match": "location_or_actor_origin",
+    "region": null,
+    "continent": null,
+    "admin1": null,
+    "bbox": null,
+    "event_family": null,
+    "category": [
+      "Riots"
+    ],
+    "subcategory": [],
+    "domain": null,
+    "has_fatalities": null,
+    "civilian_targeting": null,
+    "search": null,
+    "languages": null,
+    "incident_resolution": null,
+    "ignored": {}
+  },
+  "meta": {
+    "row_source": "settled",
+    "settled_at": "2026-10-17 14:39:08",
+    "row_source_reason": "settled",
+    "coverage": {
+      "start": "2026-03-01",
+      "end": "2026-10-20",
+      "note": "First day of continuous event coding. Rows dated earlier exist but are back-dated occurrence dates written by 2026 ingest — a scatter of individual events, not coverage of those periods.",
+      "warnings": [],
+      "served_dates": [
+        "2026-10-14",
+        "2026-10-15",
+        "2026-10-16",
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "missing_dates": [],
+      "awaiting_dates": [],
+      "partial_dates": [
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "window_complete": false
+    },
+    "query_window": {
+      "date_start": "2026-10-14",
+      "date_end": "2026-10-20",
+      "date_basis": "event_date",
+      "date_bounds": "inclusive",
+      "observed_start": null,
+      "observed_end": null,
+      "observed_basis": "coded_at",
+      "observed_end_exclusive": true,
+      "source": "explicit"
+    },
+    "window_adjustment": null,
+    "actor_identity": {
+      "status": "available",
+      "matched_actor_count": 0,
+      "unresolved_actor_count": 28,
+      "lookup_unavailable_count": 0,
+      "truncated_actor_count": 0
+    }
+  }
+}
