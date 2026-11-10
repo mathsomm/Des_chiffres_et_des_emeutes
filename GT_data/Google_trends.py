@@ -36,14 +36,16 @@ class Google_Trends:
         return city_df
 
     def normalisation(self, df):
+        
         for col in df.columns:
+            if col == "Time" or col == "isPartial": continue
             df[col] = (df[col] - df[col].min()) / (df[col].max() - df[col].min()) * 100
         return df
     def add_average(self, df):
-        df["mean"] = df.mean(axis=1)
+        df["mean"] = df.mean(axis=1, numeric_only=True)        
         return df
     def plot(self, df, colonnes = None):
-        print(df.columns)
+
         for col in df.columns:
             if col == "Time" or col == "isPartial": continue
             if colonnes is None or col in colonnes:
@@ -62,13 +64,13 @@ GT = Google_Trends()
 #Remarque: mots sensibles aux majuscules (peu) et sg/pluriel (plus de variance, le sg a plus d'occurence)
 # mais pas aux accents.
 # On ne garde que des mots cohérents avec le contexte de l'étude et évite les mots à double sens
-Trends(request_delay=1.0)
+Trends(request_delay=1.5)
 mots_contexte = ["Emeute", "violences urbaines"] #, "manifestation", "violence", 
 mots_acteurs = ["casseurs"]
 mots_actions = ["saccage", 'pillage']
 mots_matériel = ["mortier", "LBD"]
 mots_de_recherche = mots_contexte+mots_acteurs + mots_actions + mots_matériel
-df = GT.get_trends(mots_de_recherche, geo = "FR")
+df = GT.get_trends(mots_de_recherche, geo = "FR", timeframe = "today 5-y")
 df = GT.normalisation(df)
 df = GT.add_average(df)
-GT.plot(df)
+GT.plot(df, ["mean"])
