@@ -1,4 +1,8 @@
-import os, json, time, requests, s3fs
+'''
+ce script regroupe les resultats par fenetres du script req_all_bywindows dans un meme fichier json
+'''
+
+import json, s3fs
 from datetime import date, timedelta
 
 
