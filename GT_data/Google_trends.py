@@ -1,23 +1,24 @@
-
 import pandas as pd
 from trendspy import Trends, BatchPeriod
 import matplotlib.pyplot as plt
 
 class Google_Trends:
+    def __init__(self):
+        self.data = []
+        self.time_period = ""
 
-    def get_trends(self, mots, timeframe="today 5-y", geo="FR"):
-        print("Récupération de trends pour: ", mots)
-        
+    def get_trends(self, mots, timeframe="today 5-y", geo="FR"):        
         tr = Trends()
 
         dfs = []
-        for i in range(0, len(mots), 5):
+        for i in range(0, len(mots), 4):
             df = tr.interest_over_time(mots[i:i+4], timeframe=timeframe, geo=geo)
-            df.reset_index(inplace=True)
-            df.rename(columns={"time [UTC]": "Time"}, inplace=True)
+            df = df.reset_index()
+            
             dfs.append(df)
 
-        df_tot = pd.concat(dfs, ignore_index=True)
+        df_tot = pd.concat(dfs, axis=1)
+        df_tot = df_tot.rename(columns={"time [UTC]": "Time"})
 
         if not df_tot.empty:
             df_tot = df_tot.drop(columns=["isPartial"])
@@ -41,10 +42,12 @@ class Google_Trends:
             if col == "Time" or col == "isPartial": continue
             df[col] = (df[col] - df[col].min()) / (df[col].max() - df[col].min()) * 100
         return df
+
     def add_average(self, df):
         df["mean"] = df.mean(axis=1, numeric_only=True)        
         return df
-    def plot(self, df, colonnes = None):
+        
+    def plot(self, df, colonnes=None):
 
         for col in df.columns:
             if col == "Time" or col == "isPartial": continue
@@ -58,19 +61,22 @@ class Google_Trends:
         plt.grid(True, linestyle="--", alpha=0.6)
         plt.show()
 
-GT = Google_Trends()
+    def get_data(self, mots, date="today 5-y"):
+        print("Récupération de trends pour: ", mots)
+
+        Trends(request_delay=1.5)
+        df = self.get_trends(mots, geo="FR", timeframe=date)
+        print("data récupérées")
+        df = self.normalisation(df)
+        df = self.add_average(df)
+
+        self.data = df
+        self.time_period = date
+        return df[["mean", "Time"]]
+
 
 
 #Remarque: mots sensibles aux majuscules (peu) et sg/pluriel (plus de variance, le sg a plus d'occurence)
 # mais pas aux accents.
 # On ne garde que des mots cohérents avec le contexte de l'étude et évite les mots à double sens
-Trends(request_delay=1.5)
-mots_contexte = ["Emeute", "violences urbaines"] #, "manifestation", "violence", 
-mots_acteurs = ["casseurs"]
-mots_actions = ["saccage", 'pillage']
-mots_matériel = ["mortier", "LBD"]
-mots_de_recherche = mots_contexte+mots_acteurs + mots_actions + mots_matériel
-df = GT.get_trends(mots_de_recherche, geo = "FR", timeframe = "today 5-y")
-df = GT.normalisation(df)
-df = GT.add_average(df)
-GT.plot(df, ["mean"])
+
