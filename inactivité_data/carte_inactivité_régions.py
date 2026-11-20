@@ -44,5 +44,5 @@ variable = "Taux d'inactivité chez les 15-24 ans 2023"
 graphe = carte.plot(column=variable, cmap="YlOrRd", edgecolor="white", legend=True, legend_kwds={"label": "Taux d'inactivité chez les 15-24 ans en 2023 (en %)"})
 graphe.set_axis_off()
 graphe.set_title("Taux d'inactivité chez les 15-24 ans par région")
-#plt.savefig("carte_inactivité_régions.png")
+plt.savefig("carte_inactivité_régions.png")
 plt.show
