@@ -73,6 +73,56 @@ class Google_Trends:
         self.data = df
         self.time_period = date
         return df[["mean", "Time"]]
+    ############### COMPARER GT et GDELT #################
+    def comparer_GDELT(self, df_gdelt, aggregation_periode = "W-Sun", afficher=False):
+        df_gdelt['observed_at'] = pd.to_datetime(df_gdelt['observed_at']).dt.tz_localize(None)
+
+        # Pour aggréger par x jours ( mettre "xD" en periode ou 'W-SUN' pour une semaine)
+
+        df_gdelt_weekly = (
+            df_gdelt
+            .resample(str(periode) + 'D', on='observed_at')
+            .size()
+            .reset_index(name='nb_emeutes')
+        )
+
+        # Renommer la colonne pour qu'elle ait le même nom que dans df_trends
+        df_gdelt_weekly = df_gdelt_weekly.rename(columns={'observed_at': 'Time'})
+
+        if afficher: self.comparer_GDELT_plot(df_gdelt_weekly)
+        return df_gdelt_weekly
+
+
+    def comparer_GDELT_plot(self, df_gdelt):
+        df_trends = self.data
+
+        fig, ax1 = plt.subplots(figsize=(12, 6))
+
+        # Courbe 1 axe de gauche
+        color1 = 'tab:blue'
+        ax1.set_xlabel('Time')
+        ax1.set_ylabel('Mentions GDELT', color=color1, fontweight='bold')
+        line1 = ax1.plot(df_gdelt['Time'], df_gdelt['nb_emeutes'], color=color1, label='Mentions GDELT', linewidth=2)
+        ax1.tick_params(axis='y', labelcolor=color1)
+
+        ax2 = ax1.twinx()
+
+        color2 = 'tab:red'
+        ax2.set_ylabel('Indice Google Trends (0-100)', color=color2, fontweight='bold')
+        line2 = ax2.plot(df_trends['Time'], df_trends['mean'], color=color2, linestyle='--', label='Google Trends', linewidth=2)
+        ax2.tick_params(axis='y', labelcolor=color2)
+
+        # Légendes
+        lines = line1 + line2
+        labels = [l.get_label() for l in lines]
+        ax1.legend(lines, labels, loc='upper left')
+
+        plt.title('Évolution comparée : Mentions GDELT vs Recherches Google Trends')
+        ax1.grid(True, alpha=0.3)
+        fig.tight_layout()  # Évite que le label de droite soit coupé
+        plt.savefig("ComparaisonGtrendDGELT.png")
+        plt.show()
+
 
 
 
