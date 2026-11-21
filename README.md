@@ -10,16 +10,6 @@ La difficulté première du projet étant d'obtenir des renseignements fiables s
 ### Problématique
 
 
-## Description
-Projet réalisé en plusieurs parties. Nous avons à cœur de garder un approche claire et transparente:
-- Récupération
-- Données problématiques (valeurs manquantes, outliers, réalisation des join)
-- Modélisation
-- Conclusion
-
-### Contexte 
-
-
 ### Données
 - Modeliser les emeutes
 Deux bases de données sont utilisées pour caractériser au mieux ce phénomène:
