@@ -33,7 +33,7 @@ MY_BUCKET = "vgounot"
 FILE_PATH_S3 = f"{MY_BUCKET}/diffusion/gcloud_emeutes_all.json"
 with fs.open(FILE_PATH_S3, 'r', encoding="utf-8") as file_in:
     df_GDELT_small = pd.read_json(file_in)
-    print("\n\n\n GDEL bigQuery small", df_GDELT_small.info())
+    print("\n\n\n GDELT bigQuery small", df_GDELT_small.info())
     print(df_GDELT_small.head())
 
 
@@ -41,7 +41,7 @@ FILE_PATH_S3 = f"{MY_BUCKET}/diffusion/2023_gcloud_emeutes.parquet"
 
 with fs.open(FILE_PATH_S3, 'rb', encoding="utf-8") as file_in:
     df_GDELT_large = pd.read_parquet(file_in)
-print("\n\n\n GDEL bigQuery gros", df_GDELT_large.info())
+print("\n\n\n GDELT bigQuery gros", df_GDELT_large.info())
 print(df_GDELT_large.head())
 
 

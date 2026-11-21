@@ -1,6 +1,6 @@
 # Projet_Python_2A
 
-## Pitch
+## Descrition
 On analyse souvent les émeutes comme une explosion soudaine et imprévisible. Est ce vraiment le cas ? Il est possible que les territoires avec un taux d'inactivité plus élevé subissent plus frequemment ces désagréments. L'objectif de ce projet Python est ainsi d'explorer les dynamiques des émeutes et d'identifier les principaux drivers qui accompagnent ces évenements.
 
 À travers un schema de collecte, de nettoyage et d'analyse de données, nous étudirons les corrélations entre présence de quartiers prioritaires (QPV), le taux d'inactivité et les émeutes. 
