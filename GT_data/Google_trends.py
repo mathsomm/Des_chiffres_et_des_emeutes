@@ -41,10 +41,12 @@ class Google_Trends:
         for col in df.columns:
             if col == "Time" or col == "isPartial": continue
             df[col] = (df[col] - df[col].min()) / (df[col].max() - df[col].min()) * 100
+        self.data = df
         return df
 
     def add_average(self, df):
-        df["mean"] = df.mean(axis=1, numeric_only=True)        
+        df["mean"] = df.mean(axis=1, numeric_only=True)
+        self.data = df
         return df
         
     def plot(self, df, colonnes=None):
@@ -64,7 +66,7 @@ class Google_Trends:
     def get_data(self, mots, date="today 5-y"):
         print("Récupération de trends pour: ", mots)
 
-        Trends(request_delay=1.5)
+        Trends(request_delay=2.5)
         df = self.get_trends(mots, geo="FR", timeframe=date)
         print("data récupérées")
         df = self.normalisation(df)
@@ -74,14 +76,14 @@ class Google_Trends:
         self.time_period = date
         return df[["mean", "Time"]]
     ############### COMPARER GT et GDELT #################
-    def comparer_GDELT(self, df_gdelt, aggregation_periode = "W-Sun", afficher=False):
+    def comparer_GDELT(self, df_gdelt, aggregation_periode = "3D", afficher=False):
         df_gdelt['observed_at'] = pd.to_datetime(df_gdelt['observed_at']).dt.tz_localize(None)
 
         # Pour aggréger par x jours ( mettre "xD" en periode ou 'W-SUN' pour une semaine)
 
         df_gdelt_weekly = (
             df_gdelt
-            .resample(str(periode) + 'D', on='observed_at')
+            .resample(str(aggregation_periode), on='observed_at')
             .size()
             .reset_index(name='nb_emeutes')
         )
