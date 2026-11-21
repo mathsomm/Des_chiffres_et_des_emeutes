@@ -4,7 +4,7 @@ requete : données émeutes, en France, depuis janvier 2023
 stockage : format parquet, via s3://vgounot/diffusion/
 
 config :
-    pip install google-cloud-bigquery db-dtypes pandas
+    pip install google-cloud-bigquery db-dtypes
     nécessite une clé json associée à un compte de services : s3://vgounot/ (accès perso)
 
 warning :
