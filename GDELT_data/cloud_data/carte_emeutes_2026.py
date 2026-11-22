@@ -67,7 +67,7 @@ emeutes_département = emeutes_département.dropna(subset=["INSEE_DEP"])
 émeutes_agrégé = emeutes_département["INSEE_DEP"].value_counts()
 #On compte le nombre de fois où chaque département apparaît pour avoir le nombre d'événements récents par départements
 
-carte2 = departements.merge(émeutes_agrégé, left_on="INSEE_DEP", right_on="INSEE_DEP", how="left")
+carte2 = departements.merge(émeutes_agrégé, on="INSEE_DEP", how="left")
 carte2["count"] = carte2["count"].fillna(0)
 #Lorsque la valeur de count n'a pas été trouvée, c'est qu'il n'y a pas eu d'émeutes
 
