@@ -17,9 +17,9 @@ mots_matériel = ["mortier", "LBD"]
 mots_de_recherche = mots_contexte+mots_acteurs + mots_actions + mots_matériel
 
 # -- Récuperer Data -- 
-df_trend = G_trend.get_data(mots_de_recherche, "today 3-m")
+df_trend = G_trend.get_data(mots_de_recherche, "today 4-y")
 #print(df.info())
-print(df_trend.head(), "\n\n\n")
+#print(df_trend.head(), "\n\n\n")
 #G_trend.plot(df_trend, ["mean"])
 
 
@@ -42,8 +42,12 @@ FILE_PATH_S3 = f"{MY_BUCKET}/diffusion/2023_gcloud_emeutes.parquet"
 with fs.open(FILE_PATH_S3, 'rb', encoding="utf-8") as file_in:
     df_GDELT_large = pd.read_parquet(file_in)
 print("\n\n\n GDELT bigQuery gros")
-print(df_GDELT_large.head())
+print(df_GDELT_large.columns)
 
 
 #### COMPARAISON GT ET GDELT ####
-G_trend.comparer_GDELT(df_GDELT_small, 3, True)
+df_GDELT_small = df_GDELT_small.rename(columns={'observed_at': 'Time'})
+#G_trend.comparer_GDELT(df_GDELT_small, "3D", True)
+
+df_GDELT_large['Time'] = pd.to_datetime(df_GDELT_large['SQLDATE'].astype(str), format='%Y%m%d')
+#G_trend.comparer_GDELT(df_GDELT_large, "3D", True)

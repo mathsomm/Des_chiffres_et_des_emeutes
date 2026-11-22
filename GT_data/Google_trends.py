@@ -12,13 +12,11 @@ class Google_Trends:
 
         dfs = []
         for i in range(0, len(mots), 4):
-            df = tr.interest_over_time(mots[i:i+4], timeframe=timeframe, geo=geo)
-            df = df.reset_index()
-            
+            df = tr.interest_over_time(mots[i:i+4], timeframe=timeframe, geo=geo)           
             dfs.append(df)
 
         df_tot = pd.concat(dfs, axis=1)
-        df_tot = df_tot.rename(columns={"time [UTC]": "Time"})
+        df_tot = df_tot.reset_index().rename(columns={"time [UTC]": "Time"})
 
         if not df_tot.empty:
             df_tot = df_tot.drop(columns=["isPartial"])
@@ -88,8 +86,6 @@ class Google_Trends:
             .reset_index(name='nb_emeutes')
         )
 
-        # Renommer la colonne pour qu'elle ait le même nom que dans df_trends
-        df_gdelt_weekly = df_gdelt_weekly.rename(columns={'observed_at': 'Time'})
 
         if afficher: self.comparer_GDELT_plot(df_gdelt_weekly)
         return df_gdelt_weekly
@@ -97,7 +93,6 @@ class Google_Trends:
 
     def comparer_GDELT_plot(self, df_gdelt):
         df_trends = self.data
-
         fig, ax1 = plt.subplots(figsize=(12, 6))
 
         # Courbe 1 axe de gauche
