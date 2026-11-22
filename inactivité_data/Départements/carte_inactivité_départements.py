@@ -37,10 +37,26 @@ departements = departements.to_crs(2154) #On passe en projection Lambert 93
 
 carte = departements.merge(data, left_on="INSEE_DEP", right_on="Code", how="left")
 
+petite_couronne = carte[carte["INSEE_DEP"].isin(["75", "92", "93", "94"])]
+
 var = "Taux d'inactivité chez les jeunes"
 
-graphe = carte.plot(column=var, cmap="YlOrRd", edgecolor="white", legend=True, legend_kwds={"label":"Taux d'inactivité chez les 15-24 ans en 2023 (en %)"})
+vmin = carte[var].min()
+vmax = carte[var].max()
+
+fig = plt.figure(figsize=(16,10))
+
+ax1 = fig.add_axes([0.03, 0.08, 0.58, 0.84])
+ax2 = fig.add_axes([0.35, 0.65, 0.20, 0.25])
+
+xmin, ymin, xmax, ymax = petite_couronne.total_bounds
+ax2.set_xlim(xmin-50000, xmax+50000)
+ax2.set_ylim(ymin-50000, ymax+50000)
+
+graphe = carte.plot(column=var, ax=ax1, cmap="YlOrRd", vmin=vmin, vmax=vmax, edgecolor="black", legend=True, legend_kwds={"label":"Taux d'inactivité chez les 15-24 ans en 2023 (en %)"})
 graphe.set_axis_off()
 graphe.set_title("Taux d'inactivité chez les 15-24 ans par département")
+petite_couronne.plot(column=var, ax=ax2, cmap="YlOrRd", vmin=vmin, vmax=vmax, edgecolor="black" )
+ax2.set_axis_off()
 plt.savefig("carte_inactivite_départements.png")
 plt.show()
