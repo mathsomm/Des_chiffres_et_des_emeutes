@@ -100,4 +100,4 @@ data_QPV = pd.read_csv("/home/onyxia/Projet_Python_2A/QPV_data/Départements/par
 
 data1 = emeutes_département.merge(data_inactivité, left_on="INSEE_DEP", right_on="Code", how="left")
 data_tout = data1.merge(data_QPV, left_on="INSEE_DEP", right_on="Code", how="left")
-print(data_tout)
+
