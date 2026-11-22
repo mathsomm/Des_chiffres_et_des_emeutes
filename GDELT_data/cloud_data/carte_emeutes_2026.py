@@ -57,4 +57,36 @@ points.plot(ax=ax, color="red", markersize=10, legend=True, legend_kwds={"label"
 plt.savefig("Carte_émeutes_2026.png")
 plt.show()
 
+## Agrégation des émeutes par département
 
+emeutes_département = gpd.sjoin(points, departements[["INSEE_DEP", "geometry"]], how="left", predicate="within")
+# Cela permet d'attribuer un département à chaque de la carte
+emeutes_département.dropna()
+# Il y a un point en dehors de la France sur la carte précédente, donc je préfère retirer la donnée pour la suite
+
+émeutes_agrégé = emeutes_département["INSEE_DEP"].value_counts()
+#On compte le nombre de fois où chaque département apparaît pour avoir le nombre d'événements récents par départements
+
+carte2 = departements.merge(émeutes_agrégé, left_on="INSEE_DEP", right_on="INSEE_DEP", how="left")
+carte2["count"] = carte2["count"].fillna(0)
+#Lorsque la valeur de count n'a pas été trouvée, c'est qu'il n'y a pas eu d'émeutes
+
+petite_couronne = carte2[carte2["INSEE_DEP"].isin(["75", "92", "93", "94"])]
+
+variable = "count"
+
+vmin = carte2["count"].min()
+vmax = carte2["count"].max()
+
+fig, axes = plt.subplots(1, 2, figsize=(16,8))
+
+graphe2 = carte2.plot(column=variable, ax=axes[0], cmap="YlOrRd", vmin=vmin, vmax=vmax, edgecolor="black", legend=True, legend_kwds={"label" : "Nombre d'émeutes dans le département en 2026"})
+petite_couronne.plot(column=variable, ax=axes[1], cmap="YlOrRd", vmin=vmin, vmax=vmax, edgecolor="black")
+graphe2.set_axis_off()
+graphe2.set_title("Nombre d'émeutes dans chaque département en 2026")
+axes[1].set_axis_off()
+xmin, ymin, xmax, ymax = petite_couronne.total_bounds
+axes[1].set_xlim(xmin-3000, xmax+3000)
+axes[1].set_ylim(ymin-3000, ymax+3000)
+plt.savefig("Carte_émeutes_2026_départements.png")
+plt.show()
