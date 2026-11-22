@@ -54,7 +54,7 @@ departements.plot(ax=ax, color="white", edgecolor="black")
 ax.set_axis_off()
 ax.set_title("Répartition des émeutes sur le territoire français en 2026")
 points.plot(ax=ax, color="red", markersize=10, legend=True, legend_kwds={"label": "Emeutes"})
-#plt.savefig("Carte_émeutes_2026.png")
+plt.savefig("Carte_émeutes_2026.png")
 plt.show()
 
 ## Agrégation des émeutes par département
@@ -91,7 +91,7 @@ xmin, ymin, xmax, ymax = petite_couronne.total_bounds
 ax2.set_xlim(xmin-50000, xmax+50000)
 ax2.set_ylim(ymin-50000, ymax+50000)
 ax2.set_axis_off()
-#plt.savefig("Carte_émeutes_2026_départements.png")
+plt.savefig("Carte_émeutes_2026_départements.png")
 plt.show()
 
 ## Importation des données à propos des autres paramètres
@@ -100,4 +100,3 @@ data_QPV = pd.read_csv("/home/onyxia/Projet_Python_2A/QPV_data/Départements/par
 
 data1 = emeutes_département.merge(data_inactivité, left_on="INSEE_DEP", right_on="Code", how="left")
 data_tout = data1.merge(data_QPV, left_on="INSEE_DEP", right_on="Code", how="left")
-
