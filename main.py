@@ -17,7 +17,7 @@ mots_matériel = ["mortier", "LBD"]
 mots_de_recherche = mots_contexte+mots_acteurs + mots_actions + mots_matériel
 
 # -- Récuperer Data -- 
-df_trend = G_trend.get_data(mots_de_recherche, "today 4-y")
+#df_trend = G_trend.get_data(mots_de_recherche, "today 4-y")
 #print(df.info())
 #print(df_trend.head(), "\n\n\n")
 #G_trend.plot(df_trend, ["mean"])
@@ -44,6 +44,9 @@ with fs.open(FILE_PATH_S3, 'rb', encoding="utf-8") as file_in:
 print("\n\n\n GDELT bigQuery gros")
 print(df_GDELT_large.columns)
 
+
+nb_franckfurt = df_GDELT_large['SOURCEURL'].str.contains('frankfurt', case=False, na=False).sum()
+print(nb_franckfurt)
 
 #### COMPARAISON GT ET GDELT ####
 df_GDELT_small = df_GDELT_small.rename(columns={'observed_at': 'Time'})
