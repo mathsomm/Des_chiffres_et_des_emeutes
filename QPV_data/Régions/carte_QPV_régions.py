@@ -8,7 +8,7 @@ np.random.seed(123)
 
 ## Importation des données
 
-data = pd.read_csv("/home/onyxia/Projet_Python_2A/QPV_data/Régions/Nb_QPV_régions.csv", sep=";", skiprows=2, dtype = {"Code" : str})
+data = pd.read_csv("/home/onyxia/Projet_Python_2A/QPV_data/Régions/part_population_QPV_région.csv", sep=";", skiprows=2, dtype = {"Code" : str})
 #Mettre le code en string est utile car nous allons retirer les codes commençant par 0
 #Si on laisse en float ou int, le 0 devant le code des Outre-Mer sera retiré
 
@@ -25,19 +25,19 @@ url_fond_de_carte =  ("https://minio.lab.sspcloud.fr/projet-cartiflette/producti
                       "vectorfile_format=geojson/territory=metropole/simplification=50/raw.geojson")
 
 #Je n'arrive pas à utiliser cartiflette donc je fais avec geopandas
-regions=gpd.read_file(url_fond_de_carte)
-regions.to_crs(2154) #On reprojette sur du Lambert 93, comme d'habitude
+regions = gpd.read_file(url_fond_de_carte)
+regions = regions.to_crs(2154) #On reprojette sur du Lambert 93, comme d'habitude
 regions = regions[~(regions["INSEE_REG"]<10)] #On retire les Outre-Mer
 regions["INSEE_REG"] = regions["INSEE_REG"].astype(str) #On passe les codes en str pour la jointure
 
 carte = regions.merge(data, left_on="INSEE_REG", right_on="Code", how="left")
 
-variable = "Quartiers prioritaires de la politique de la ville 2024 : Nombre de QPV sur le territoire" 
+variable = "QPV - Quartiers prioritaires de la politique de la ville 2024 : Part de la population municipale résidant en QPV" 
 
 #Et on finit par la carte
-graphe = carte.plot(column=variable, cmap="YlOrRd", edgecolor="white", legend=True, legend_kwds={"label" : "Nombre de QPV en 2024"})
+graphe = carte.plot(column=variable, cmap="YlOrRd", edgecolor="white", legend=True, legend_kwds={"label" : "Part de la population vivant en QPV en 2024"})
 graphe.set_axis_off()
-graphe.set_title("Nombre de QPV en 2024 par région")
+graphe.set_title("Part de la population vivant en QPV en 2024 par région")
 plt.savefig("carte_QPV_régions")
 plt.show()
 

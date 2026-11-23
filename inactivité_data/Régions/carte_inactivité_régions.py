@@ -31,7 +31,7 @@ url_fond_de_carte =  ("https://minio.lab.sspcloud.fr/projet-cartiflette/producti
 #Je n'arrive pas à utiliser cartiflette, donc je vais l'ouvrir avec geopandas
 regions = gpd.read_file(url_fond_de_carte)
 regions = regions[~(regions["INSEE_REG"]<10)]
-regions.to_crs(2154) #On projette sur du Lambert 93, comme préconisé dans le cours
+regions = regions.to_crs(2154) #On projette sur du Lambert 93, comme préconisé dans le cours
 
 regions["INSEE_REG"] = regions["INSEE_REG"].astype(str) 
 #On passe le code INSEE des régions en string. Pour la jointure, c'est mieux...
@@ -41,7 +41,7 @@ carte = regions.merge(data, left_on="INSEE_REG", right_on="Code", how="left")
 variable = "Taux d'inactivité chez les 15-24 ans 2023"
 
 #On peut maintenanat faire la carte
-graphe = carte.plot(column=variable, cmap="YlOrRd", edgecolor="white", legend=True, legend_kwds={"label": "Taux d'inactivité chez les 15-24 ans en 2023 (en %)"})
+graphe = carte.plot(column=variable, cmap="YlOrRd", edgecolor="black", legend=True, legend_kwds={"label": "Taux d'inactivité chez les 15-24 ans en 2023 (en %)"})
 graphe.set_axis_off()
 graphe.set_title("Taux d'inactivité chez les 15-24 ans par région")
 plt.savefig("carte_inactivité_régions.png")

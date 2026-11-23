@@ -57,4 +57,46 @@ points.plot(ax=ax, color="red", markersize=10, legend=True, legend_kwds={"label"
 plt.savefig("Carte_émeutes_2026.png")
 plt.show()
 
+## Agrégation des émeutes par département
 
+emeutes_département = gpd.sjoin(points, departements[["INSEE_DEP", "geometry"]], how="left", predicate="within")
+# Cela permet d'attribuer un département à chaque de la carte
+emeutes_département = emeutes_département.dropna(subset=["INSEE_DEP"])
+# Il y a un point en dehors de la France sur la carte précédente, donc je préfère retirer la donnée pour la suite
+
+émeutes_agrégé = emeutes_département["INSEE_DEP"].value_counts()
+#On compte le nombre de fois où chaque département apparaît pour avoir le nombre d'événements récents par départements
+
+carte2 = departements.merge(émeutes_agrégé, on="INSEE_DEP", how="left")
+carte2["count"] = carte2["count"].fillna(0)
+#Lorsque la valeur de count n'a pas été trouvée, c'est qu'il n'y a pas eu d'émeutes
+
+petite_couronne = carte2[carte2["INSEE_DEP"].isin(["75", "92", "93", "94"])]
+
+variable = "count"
+
+vmin = carte2["count"].min()
+vmax = carte2["count"].max()
+
+fig = plt.figure(figsize=(16,10))
+
+ax1 = fig.add_axes([0.03, 0.08, 0.58, 0.84])
+ax2 = fig.add_axes([0.35, 0.65, 0.20, 0.25])
+
+graphe2 = carte2.plot(column=variable, ax=ax1, cmap="YlOrRd", vmin=vmin, vmax=vmax, edgecolor="black", legend=True, legend_kwds={"label" : "Nombre d'émeutes dans le département en 2026"})
+petite_couronne.plot(column=variable, ax=ax2, cmap="YlOrRd", vmin=vmin, vmax=vmax, edgecolor="black")
+graphe2.set_axis_off()
+graphe2.set_title("Nombre d'émeutes dans chaque département en 2026")
+xmin, ymin, xmax, ymax = petite_couronne.total_bounds
+ax2.set_xlim(xmin-50000, xmax+50000)
+ax2.set_ylim(ymin-50000, ymax+50000)
+ax2.set_axis_off()
+plt.savefig("Carte_émeutes_2026_départements.png")
+plt.show()
+
+## Importation des données à propos des autres paramètres
+data_inactivité = pd.read_csv("/home/onyxia/Projet_Python_2A/inactivité_data/Départements/inactivité_jeunes_departement.csv", sep=";", dtype={"Code":str})
+data_QPV = pd.read_csv("/home/onyxia/Projet_Python_2A/QPV_data/Départements/part_population_QPV_département.csv", skiprows=2, sep=";", dtype={"Code":str})
+
+data1 = emeutes_département.merge(data_inactivité, left_on="INSEE_DEP", right_on="Code", how="left")
+data_tout = data1.merge(data_QPV, left_on="INSEE_DEP", right_on="Code", how="left")
