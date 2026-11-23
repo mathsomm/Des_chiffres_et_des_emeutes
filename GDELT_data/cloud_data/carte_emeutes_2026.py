@@ -18,6 +18,8 @@ data = pd.DataFrame(body) #read_json ne fonctionne pas car le json est "imbriqu�
 
 data["lat"] = data["geo"].apply(lambda x: x["latitude"])
 data["long"] = data["geo"].apply(lambda x: x["longitude"]) 
+data["pays"] = data["geo"].apply(lambda x: x["country"])
+data["loc"] = data["geo"].apply(lambda x: x["location"])
 #On utilise la fonction apply pour appliquer une fonction à chaque élément d'une colonne
 #On a maintenant deux colonnes qui nous donnent la localisation exacte des émeutes
 
@@ -27,6 +29,9 @@ data["long"] = data["geo"].apply(lambda x: x["longitude"])
 data = data.dropna(subset=["lat", "long"])
 #On retire aussi les Outre-mer sinon on aura des points partout dans le monde et ce sera illisible
 data = data[(data["lat"]>=41.3)&(data["lat"]<=51.2)&(data["long"]>=-5.2)&(data["long"]<=9.7)]
+
+data = data[data["pays"]=="France"] #On a remarqué un point un Espagne que l'on retire
+data = data.dropna(subset=["loc"]) #On retire aussi les points non précis qui atterrissent tous au même endroit dans la Creuse
 
 ## Importation du fond de carte
 
@@ -97,6 +102,54 @@ plt.show()
 ## Importation des données à propos des autres paramètres
 data_inactivité = pd.read_csv("/home/onyxia/Projet_Python_2A/inactivité_data/Départements/inactivité_jeunes_departement.csv", sep=";", dtype={"Code":str})
 data_QPV = pd.read_csv("/home/onyxia/Projet_Python_2A/QPV_data/Départements/part_population_QPV_département.csv", skiprows=2, sep=";", dtype={"Code":str})
+data_inactivité = data_inactivité[~data_inactivité["Code"].str.startswith("97")]
+data_inactivité["Taux d'activité des 15-24 ans 2023"] = data_inactivité["Taux d'activité des 15-24 ans 2023"].astype(float)
+data_inactivité["inactivité"] = 100-data_inactivité["Taux d'activité des 15-24 ans 2023"]
 
-data1 = emeutes_département.merge(data_inactivité, left_on="INSEE_DEP", right_on="Code", how="left")
-data_tout = data1.merge(data_QPV, left_on="INSEE_DEP", right_on="Code", how="left")
+## Jointure entre toutes les données et histogrammes
+émeutes_agrégé = émeutes_agrégé.to_frame()
+émeutes_agrégé = émeutes_agrégé.reindex(departements["INSEE_DEP"], fill_value="0") #On complète avec 0 émeutes pour les départements non concernés
+émeutes_agrégé = émeutes_agrégé.reset_index() #On met au format DataFrame pour pouvoir faire les jointures
+
+data1 = émeutes_agrégé.merge(data_inactivité, left_on="INSEE_DEP", right_on="Code", how="left")
+data_tout = data1.merge(data_QPV, on="Code", how="left")
+
+data_émeutes = data_tout[data_tout["count"].astype(float)>0]
+data_non_émeutes = data_tout[data_tout["count"].astype(float)==0]
+
+#On fait l'histogramme sur l'inactivité
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(32,14))
+
+ax1.bar(data_émeutes["INSEE_DEP"], data_émeutes["inactivité"], color="firebrick", edgecolor="black")
+ax1.set_title("Départements avec au moins une émeute")
+
+ax2.bar(data_non_émeutes["INSEE_DEP"], data_non_émeutes["inactivité"], color="steelblue", edgecolor="black")
+ax2.set_title("Départements sans émeute")
+
+for ax in (ax1, ax2):
+    ax.set_xlabel("Département")
+    ax.set_ylabel("Taux d'inactivité des jeunes")
+    ax.tick_params(axis="x", rotation=90, labelsize=9)   # On verticalise les étiquettes                                  
+    ax.legend()
+
+plt.savefig("Histogramme inactivité.png")
+
+# On fait de même un histogramme avec les QPV
+variable = "QPV - Quartiers prioritaires de la politique de la ville 2024 : Part de la population municipale résidant en QPV"
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(32,14))
+
+ax1.bar(data_émeutes["INSEE_DEP"], data_émeutes[variable], color="firebrick", edgecolor="black")
+ax1.set_title("Départements avec au moins une émeute")
+
+ax2.bar(data_non_émeutes["INSEE_DEP"], data_non_émeutes[variable], color="steelblue", edgecolor="black")
+ax2.set_title("Départements sans émeute")
+
+for ax in (ax1, ax2):
+    ax.set_xlabel("Département")
+    ax.set_ylabel("Part de la population vivant en QPV")
+    ax.tick_params(axis="x", rotation=90, labelsize=9)   # On verticalise les étiquettes                                  
+    ax.legend()
+
+plt.savefig("Histogramme QPV.png")
