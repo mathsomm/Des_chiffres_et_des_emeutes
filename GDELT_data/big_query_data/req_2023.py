@@ -10,6 +10,18 @@ config :
 warning :
     BigQuery Storage module not found, fetch data with the REST endpoint instead
 '''
+import s3fs
+import json
+from google.cloud import bigquery
+from google.oauth2 import service_account
+
+
+# authentification (attention, à modifier, pour la reproductibilité info est innacessible au public)
+fs = s3fs.S3FileSystem(client_kwargs={"endpoint_url": "https://minio.lab.sspcloud.fr"})
+with fs.open("vgounot/analyseemeutes-d76c10827b8e.json", "rb") as f:
+    info = json.load(f)
+creds = service_account.Credentials.from_service_account_info(info)
+client = bigquery.Client(project=info["project_id"], credentials=creds)
 
 
 def estimation_donnees_scannees(req):
@@ -39,7 +51,6 @@ def requete(req, limite=10**11):
     scan = estimation_donnees_scannees(req)
     if scan < limite:
         df = client.query(req).to_dataframe()
-        print(df.head())
         PATH = "vgounot/diffusion/2023_gcloud_emeutes2.parquet"
         with fs.open(PATH, "wb") as f:
             df.to_parquet(f, index=False)
