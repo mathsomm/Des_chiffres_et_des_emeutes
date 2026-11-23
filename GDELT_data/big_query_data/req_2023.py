@@ -43,17 +43,21 @@ def estimation_donnees_scannees(req):
 
 def requete(req, limite=10**11):
     '''
-    requete via Google BigQuery si le volume de données scannées est acceptable
+    requete via Google BigQuery si le volume de données scannées est acceptable et si la requete
+    n'a pas déjà été effectuée auparavant
     entrée :
     req, la requete
-    limite, la limite de données scannées
+    limite=10**11, la limite de données scannées à ne pas dépasser pour faire la requete
     '''
-    scan = estimation_donnees_scannees(req)
-    if scan < limite:
-        df = client.query(req).to_dataframe()
-        PATH = "vgounot/diffusion/2023_gcloud_emeutes2.parquet"
-        with fs.open(PATH, "wb") as f:
-            df.to_parquet(f, index=False)
-        print(f"l'estimation des données scannées est acceptable \n le résultat est disponible au format parquet à l'adresse {PATH}")
+    PATH = "vgounot/diffusion/2023_gcloud_emeutes.parquet"
+    if fs.exists(PATH):
+        print(f"Cette requête a déjà été effectuée et son résultat a été stocké à des fins de reproductibilité.\nLe résultat est disponible au format parquet à l'adresse {PATH}.")
     else:
-        print(f"l'estimation des données scannées dépasse {limite} octets test")
+        scan = estimation_donnees_scannees(req)
+        if scan < limite:
+            df = client.query(req).to_dataframe()
+            with fs.open(PATH, "wb") as f:
+                df.to_parquet(f, index=False)
+            print(f"L'estimation des données scannées est acceptable.\nLe résultat est disponible au format parquet à l'adresse {PATH}.")
+        else:
+            print(f"L'estimation des données scannées dépasse {limite} octets.")
