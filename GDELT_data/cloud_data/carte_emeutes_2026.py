@@ -119,37 +119,45 @@ data_non_émeutes = data_tout[data_tout["count"].astype(float)==0]
 
 #On fait l'histogramme sur l'inactivité
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(32,14))
+bins = np.linspace(data_tout["inactivité"].min(), data_tout["inactivité"].max(), 11)
 
-ax1.bar(data_émeutes["INSEE_DEP"], data_émeutes["inactivité"], color="firebrick", edgecolor="black")
-ax1.set_title("Départements avec au moins une émeute")
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7))
 
-ax2.bar(data_non_émeutes["INSEE_DEP"], data_non_émeutes["inactivité"], color="steelblue", edgecolor="black")
+ax1.hist(data_émeutes["inactivité"], bins=bins, color="firebrick", edgecolor="black")
+ax1.set_title("Départements avec émeutes")
+
+ax2.hist(data_non_émeutes["inactivité"], bins=bins, color="steelblue", edgecolor="black")
 ax2.set_title("Départements sans émeute")
 
 for ax in (ax1, ax2):
-    ax.set_xlabel("Département")
-    ax.set_ylabel("Taux d'inactivité des jeunes")
-    ax.tick_params(axis="x", rotation=90, labelsize=9)   # On verticalise les étiquettes                                  
+    ax.set_xticks(bins)
+    ax.set_xticklabels([f"{b:.1f}" for b in bins], rotation=45)
+    ax.set_xlabel("Taux d'inactivité des jeunes")
+    ax.set_ylabel("Nombre de départements")
     ax.legend()
 
 plt.savefig("Histogramme inactivité.png")
 
 # On fait de même un histogramme avec les QPV
+data_tout = data_tout[~data_tout["INSEE_DEP"].isin(["93"])] #On supprime le 93 qui rend le graphe peu exploitable
 variable = "QPV - Quartiers prioritaires de la politique de la ville 2024 : Part de la population municipale résidant en QPV"
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(32,14))
+bins1 = np.linspace(data_tout[variable].min(), data_tout[variable].max(), 11)
 
-ax1.bar(data_émeutes["INSEE_DEP"], data_émeutes[variable], color="firebrick", edgecolor="black")
-ax1.set_title("Départements avec au moins une émeute")
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7))
 
-ax2.bar(data_non_émeutes["INSEE_DEP"], data_non_émeutes[variable], color="steelblue", edgecolor="black")
+ax1.hist(data_émeutes[variable], bins=bins1, color="firebrick", edgecolor="black")
+ax1.set_title("Départements avec émeutes")
+
+ax2.hist(data_non_émeutes[variable], bins=bins1, color="steelblue", edgecolor="black")
 ax2.set_title("Départements sans émeute")
 
 for ax in (ax1, ax2):
-    ax.set_xlabel("Département")
-    ax.set_ylabel("Part de la population vivant en QPV")
-    ax.tick_params(axis="x", rotation=90, labelsize=9)   # On verticalise les étiquettes                                  
+    ax.set_xticks(bins1)
+    ax.set_xticklabels([f"{b:.1f}" for b in bins1], rotation=45)
+    ax.set_xlabel("Part de la population vivant en QPV")
+    ax.set_ylabel("Nombre de départements")
     ax.legend()
 
 plt.savefig("Histogramme QPV.png")
+
