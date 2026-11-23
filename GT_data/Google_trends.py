@@ -52,7 +52,7 @@ class Google_Trends:
         for col in df.columns:
             if col == "Time" or col == "isPartial": continue
             if colonnes is None or col in colonnes:
-                plt.plot(df["Time"], df[col], label=col, linewidth=2)
+                plt.plot(df["Time"], df[col], label=col, linewidth=2, color="tab:red", linestyle="--")
 
         plt.title("Évolution de l'intérêt sur Google Trends", fontsize=14)
         plt.xlabel("Date")
