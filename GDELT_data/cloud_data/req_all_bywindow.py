@@ -112,4 +112,5 @@ def requete_gcloud(
     with fs.open(path, "w", encoding="utf-8") as f:
         json.dump(list(events.values()), f, ensure_ascii=False)
         print(f"Le résultat est disponible au format JSON à l'adresse {path}.")
+    return(None)
 
