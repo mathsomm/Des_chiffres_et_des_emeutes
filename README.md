@@ -35,6 +35,9 @@ Le projet peut être exécuté sans varibles d'environnement additionnelles. Né
 - `"GDELT_BIGQUERY_KEY"` : la clé JSON d'un compte de service associé à un projet [ici](https://console.cloud.google.com/bigquery)
 - `"GDELT_API_KEY"` : la clé API pour GDELT Cloud (les requêtes à disposition via le "free plan" sont suffisantes)
 
+## Execution
+Pour lancer le projet, ouvrir le notebook `Projet_main.ipynb`, qui constitue le rapport du projet.
+
 ## Structure du dépot
 
 
