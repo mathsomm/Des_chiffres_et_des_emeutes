@@ -65,7 +65,6 @@ def req_window(start, end, base_params):
     params = {**base_params, "date_start": start.isoformat(), "date_end": end.isoformat()}
     rows = []
     while True:
-        print("test1")
         body = req_page(params)
         rows += body["data"]
         cursor = body["pagination"]["next_cursor"]
@@ -96,7 +95,6 @@ def requete_gcloud(
     d = start_date
     events = {}
     while d <= end_date:
-        print("test2")
         e = min(d + timedelta(days=MAX_DAYS - 1), end_date)
         path = f"{cache}/{d}_{e}.json"
         if fs.exists(path):
@@ -111,7 +109,7 @@ def requete_gcloud(
             events[ev["id"]] = ev
         d = e + timedelta(days=1)
     path = f"{cache}/gcloud_emeutes_all.json"
-    with fs.open(path, "w", encoding="utf-8") as f:
-        json.dump(list(events.values()), f, ensure_ascii=False)
-        print(f"Le résultat est disponible au format JSON à l'adresse {path}.")
-        1/0
+    if not fs.exists(path):
+        with fs.open(path, "w", encoding="utf-8") as f:
+            json.dump(list(events.values()), f, ensure_ascii=False)
+    print(f"Le résultat est disponible au format JSON à l'adresse {path}.")
