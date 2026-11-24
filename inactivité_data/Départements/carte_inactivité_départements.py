@@ -8,7 +8,7 @@ np.random.seed(123)
 
 ## Importation du jeu de données
 
-data=pd.read_csv("/home/onyxia/Projet_Python_2A/inactivité_data/Départements/inactivité_jeunes_departement.csv", sep=";", dtype={"Code":str})
+data=pd.read_csv("/home/onyxia/Projet_Python_2A/inactivité_data/Départements/inactivité_jeunes_departement.csv", skiprows=2, sep=";", dtype={"Code":str})
 #Le code est ici mis en string pour que l'on puisse retirer les Outre-mer dont le code commence par 97
 
 ##  Nettoyage

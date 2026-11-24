@@ -100,7 +100,7 @@ plt.savefig("Carte_émeutes_2026_départements.png")
 plt.show()
 
 ## Importation des données à propos des autres paramètres
-data_inactivité = pd.read_csv("/home/onyxia/Projet_Python_2A/inactivité_data/Départements/inactivité_jeunes_departement.csv", sep=";", dtype={"Code":str})
+data_inactivité = pd.read_csv("/home/onyxia/Projet_Python_2A/inactivité_data/Départements/inactivité_jeunes_departement.csv", skiprows=2, sep=";", dtype={"Code":str})
 data_QPV = pd.read_csv("/home/onyxia/Projet_Python_2A/QPV_data/Départements/part_population_QPV_département.csv", skiprows=2, sep=";", dtype={"Code":str})
 data_inactivité = data_inactivité[~data_inactivité["Code"].str.startswith("97")]
 data_inactivité["Taux d'activité des 15-24 ans 2023"] = data_inactivité["Taux d'activité des 15-24 ans 2023"].astype(float)
