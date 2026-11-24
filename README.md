@@ -6,20 +6,24 @@ Ces dernières années, les émeutes en France ont vu leur fréquence augmenter,
 Une réforme législative entrant en vigueur en janvier 2027 impose donc aux assureurs de couvrir les émeutes dans les mêmes conditions que les contrats incendie, et pour compenser prévoit la mise en place d’un fonds de réassurance garanti par l’Etat. Du point de vue des réassureurs, pour aider les cédantes à composer avec cette réforme et statuer quant au maintien des contrats via la réassurance traditionnelle, il faut prédire le risque émeute pour les prochaines années.
 
 ## Données
-Deux bases de données sont utilisées pour caractériser au mieux ce phénomène:
 
 ### GDELT:
-Descritption: GDELT est une base de données ouverte qui scanne en continu les médias du monde entier (presse en ligne, agences, web) et transforme chaque article en événement structuré. 
-Objectif: La parution d'articles sur le sujet des émeutes est le média le plus précis afin de déterminer où et quand se sont déroulés ces évenements.
+Descritption : 
+- Le GDELT Project met à disposition une base de données ouverte qui scanne en continu les médias du monde entier (presse en ligne, agences, web) et transforme chaque article en événement structuré.
+- GDELT Cloud propose une base nettoyée à partir de la base du GDELT Project, soumise à une licence. Nous avons eu l'autorisation de paratager les données extraites et les résultats dans le cadre de ce projet.
+
+Objectif : La parution d'articles sur le sujet des émeutes est le média le plus précis afin de déterminer où et quand se sont déroulés ces évenements.
 
 ### Google Trends
-Description: Google Trends permet de connaitre le nombre de requêtes pour un mot clef.
-Objectif: avoir un aperçu temporel du ressenti d'émeutes en France. 
+Description : Google Trends permet de connaitre le nombre de requêtes sur internet pour un mot clef.
+
+Objectif : avoir un aperçu temporel du ressenti d'émeutes en France. 
 Dans un but de vérifier les informations récupérées avec GDELT, Google Trends sert à caractériser l'intérêt des francais pour les emeutes à travers des recherches comme "Mortier", "LBD", "casseurs", ... 
 
 ### Observatoire des territoires
-taux d'activité chez les 15/24
-part de la population vivant en QPV
+Description : L'observatoire des territoires contient des données socio-démographiques utiles pour notre analyse.
+- taux d'activité chez les 15/24
+- part de la population vivant en QPV
 
 ## Dépendances
 Les dépendances (avec des numéros de version stricts pour la reproductibilité) sont présentes dans le fichier `requirements.text`. Elles peuvent être installées avec la commande suivante dans le terminal.
@@ -35,6 +39,4 @@ Le projet peut être exécuté sans varibles d'environnement additionnelles. Né
 
 
 ## Auteurs
-Victor GOUNOT
-Mathias SOMMIER
-Tristan MARCOUX
+Victor GOUNOT, Mathias SOMMIER, Tristan MARCOUX
