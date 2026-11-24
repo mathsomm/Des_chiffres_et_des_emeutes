@@ -21,7 +21,7 @@ Objectif : avoir un aperçu temporel du ressenti d'émeutes en France.
 Dans un but de vérifier les informations récupérées avec GDELT, Google Trends sert à caractériser l'intérêt des francais pour les emeutes à travers des recherches comme "Mortier", "LBD", "casseurs", ... 
 
 ### Observatoire des territoires
-Description : L'observatoire des territoires contient des données socio-démographiques utiles pour notre analyse.
+Description : L'observatoire des territoires contient des données socio-démographiques utiles pour notre analyse. Nous nous sommes intéressés aux données suivante, à la maille départementale.
 - taux d'activité chez les 15/24
 - part de la population vivant en QPV
 
