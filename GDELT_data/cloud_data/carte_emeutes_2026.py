@@ -108,7 +108,7 @@ data_inactivité["inactivité"] = 100-data_inactivité["Taux d'activité des 15-
 
 ## Jointure entre toutes les données et histogrammes
 émeutes_agrégé = émeutes_agrégé.to_frame()
-émeutes_agrégé = émeutes_agrégé.reindex(departements["INSEE_DEP"], fill_value="0") #On complète avec 0 émeutes pour les départements non concernés
+émeutes_agrégé = émeutes_agrégé.reindex(departements["INSEE_DEP"], fill_value=0) #On complète avec 0 émeutes pour les départements non concernés
 émeutes_agrégé = émeutes_agrégé.reset_index() #On met au format DataFrame pour pouvoir faire les jointures
 
 data1 = émeutes_agrégé.merge(data_inactivité, left_on="INSEE_DEP", right_on="Code", how="left")
@@ -134,7 +134,6 @@ for ax in (ax1, ax2):
     ax.set_xticklabels([f"{b:.1f}" for b in bins], rotation=45)
     ax.set_xlabel("Taux d'inactivité des jeunes")
     ax.set_ylabel("Nombre de départements")
-    ax.legend()
 
 plt.savefig("Histogramme inactivité.png")
 
@@ -157,7 +156,6 @@ for ax in (ax1, ax2):
     ax.set_xticklabels([f"{b:.1f}" for b in bins1], rotation=45)
     ax.set_xlabel("Part de la population vivant en QPV")
     ax.set_ylabel("Nombre de départements")
-    ax.legend()
 
 plt.savefig("Histogramme QPV.png")
 
