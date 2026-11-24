@@ -35,11 +35,17 @@ Le projet peut être exécuté sans variables d'environnement additionnelles. N�
 - `"GDELT_BIGQUERY_KEY"` : la clé JSON d'un compte de service associé à un projet sur Google BigQuery, [ici](https://console.cloud.google.com/bigquery).
 - `"GDELT_API_KEY"` : la clé API pour GDELT Cloud (les requêtes à disposition via le "free plan" sont suffisantes)
 
+## Structure du dépot
+Le dépot est structuré de la manière suivante :
+- Un dossier où sont inscrites les fonctions qui permettent d'importer les données GDELT
+- Un dossier définissant une classe pour manipuler les données Google Trends
+- un .gitignore
+- un notebook, rapport des résultats du projet
+- un README
+- un requirements.txt
+
 ## Execution
 Pour lancer le projet, exécuter le notebook `Projet_main.ipynb`, qui constitue le rapport du projet.
-
-## Structure du dépot
-
 
 ## Auteurs
 Victor GOUNOT, Mathias SOMMIER, Tristan MARCOUX
