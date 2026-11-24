@@ -11,8 +11,8 @@ class Google_Trends:
         tr = Trends()
 
         dfs = []
-        for i in range(0, len(mots), 4):
-            df = tr.interest_over_time(mots[i:i+4], timeframe=timeframe, geo=geo)           
+        for i in range(0, len(mots), 5):
+            df = tr.interest_over_time(mots[i:i+5], timeframe=timeframe, geo=geo)           
             dfs.append(df)
 
         df_tot = pd.concat(dfs, axis=1)
@@ -59,6 +59,7 @@ class Google_Trends:
         plt.ylabel("Intérêt (0 à 100)")
         plt.legend(title="Mots-clés", loc="upper left")
         plt.grid(True, linestyle="--", alpha=0.6)
+        plt.gcf().autofmt_xdate()
         plt.show()
 
     def get_data(self, mots, date="today 5-y"):
@@ -117,6 +118,7 @@ class Google_Trends:
         plt.title('Évolution comparée : Mentions GDELT vs Recherches Google Trends')
         ax1.grid(True, alpha=0.3)
         fig.tight_layout()  # Évite que le label de droite soit coupé
+        plt.gcf().autofmt_xdate()
         plt.savefig("ComparaisonGtrendDGELT.png")
         plt.show()
 
