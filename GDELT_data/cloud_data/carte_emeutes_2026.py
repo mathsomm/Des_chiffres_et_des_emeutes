@@ -121,7 +121,7 @@ data_non_émeutes = data_tout[data_tout["count"].astype(float)==0]
 
 bins = np.linspace(data_tout["inactivité"].min(), data_tout["inactivité"].max(), 11)
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7), sharex=True, sharey=True)
 
 ax1.hist(data_émeutes["inactivité"], bins=bins, color="firebrick", edgecolor="black")
 ax1.set_title("Départements avec émeutes")
@@ -144,7 +144,7 @@ variable = "QPV - Quartiers prioritaires de la politique de la ville 2024 : Part
 
 bins1 = np.linspace(data_tout[variable].min(), data_tout[variable].max(), 11)
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7), sharex=True, sharey=True)
 
 ax1.hist(data_émeutes[variable], bins=bins1, color="firebrick", edgecolor="black")
 ax1.set_title("Départements avec émeutes")
